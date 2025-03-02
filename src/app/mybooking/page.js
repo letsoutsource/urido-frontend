@@ -18,7 +18,7 @@ const MyBooking = () => {
     const fetchRideData = async () => {
       try {
         const response = await axios.get(
-          "https://urido.co.uk/api/booking/my-bookings",
+          "https://api.urido.co.uk/booking/my-bookings",
           { withCredentials: true }
         );
         if (response.data.success) {

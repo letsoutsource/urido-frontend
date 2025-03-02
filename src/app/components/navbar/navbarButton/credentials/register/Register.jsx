@@ -26,7 +26,7 @@ const Register = () => {
     setErrorMessage(null);
     try {
       const accessToken = await authenticateUser(
-        "https://urido.co.uk/api/user/register",
+        "https://api.urido.co.uk/user/register",
         data,
         { withCredentials: true }
       );

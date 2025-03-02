@@ -28,7 +28,7 @@ const DistanceDurationField = ({ from, to, onDistanceDurationFetched }) => {
 
       setIsLoading(true);
       try {
-        const response = await axios.get("https://urido.co.uk/api/distance", {
+        const response = await axios.get("https://api.urido.co.uk/distance", {
           params: { origin: from, destination: to },
         });
 

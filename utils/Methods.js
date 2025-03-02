@@ -46,7 +46,7 @@ export const createBooking = async (bookingData) => {
   };
   try {
     const bookingResponse = await axios.post(
-      "https://urido.co.uk/api/booking/create",
+      "https://api.urido.co.uk/booking/create",
       bookingData,
       {
         withCredentials: true,

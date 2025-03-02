@@ -10,7 +10,7 @@ const EditProfileForm = ({ register, handleSubmit }) => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.put(
-        "https://urido.co.uk/api/user/update",
+        "https://api.urido.co.uk/user/update",
         data,
         {
           withCredentials: true,

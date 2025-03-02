@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/frontend-api/sendBookingEmail/route": "/frontend-api/sendBookingEmail",
+  "/frontend-api/sendEmail/route": "/frontend-api/sendEmail",
+  "/about/page": "/about",
+  "/edit/page": "/edit",
+  "/faq/page": "/faq",
+  "/mybooking/page": "/mybooking",
+  "/help/page": "/help",
+  "/page": "/",
+  "/payment/page": "/payment",
+  "/privacyPolicy/page": "/privacyPolicy",
+  "/serviceAgreement/page": "/serviceAgreement"
+}

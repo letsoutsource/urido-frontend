@@ -10,7 +10,7 @@ const VehicleCard = ({ setValue, distance, travelDuration }) => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get("https://urido.co.uk/api/vehicles");
+        const response = await axios.get("https://api.urido.co.uk/vehicles");
         setVehiclesData(response?.data.data);
       } catch (error) {
         console.error("Error fetching vehicles data:", error);

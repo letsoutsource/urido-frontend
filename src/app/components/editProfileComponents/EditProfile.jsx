@@ -31,7 +31,7 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://urido.co.uk/api/user/current", {
+        const response = await axios.get("https://api.urido.co.uk/user/current", {
           withCredentials: true,
         });
         const userData = response.data.data;

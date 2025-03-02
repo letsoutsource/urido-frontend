@@ -12,7 +12,7 @@ const useSuggestions = (value, showSuggestions) => {
         setIsLoading(true);
         try {
           const response = await axios.get(
-            `https://urido.co.uk/api/places?input=${value}`
+            `https://api.urido.co.uk/places?input=${value}`
           );
           if (response.data && Array.isArray(response.data)) {
             setSuggestions(response.data);

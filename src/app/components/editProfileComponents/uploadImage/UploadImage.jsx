@@ -37,7 +37,7 @@ const UploadImage = ({ profilePic, setProfilePic }) => {
         formData.append("file", blob, selectedImage.name);
         try {
           const response = await axios.post(
-            "https://urido.co.uk/api/user/update-profile-pic",
+            "https://api.urido.co.uk/user/update-profile-pic",
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },

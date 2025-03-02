@@ -16,7 +16,7 @@ const ProfilePopUp = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://urido.co.uk/api/user/current", {
+        const response = await axios.get("https://api.urido.co.uk/user/current", {
           withCredentials: true,
         });
         const userData = response.data.data;
@@ -33,7 +33,7 @@ const ProfilePopUp = () => {
 
   const handleSignOutClick = async () => {
     try {
-      const response = await axios.get("https://urido.co.uk/api/user/logout", {
+      const response = await axios.get("https://api.urido.co.uk/user/logout", {
         withCredentials: true,
       });
       dispatch(logout());

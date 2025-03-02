@@ -3,7 +3,7 @@ import "./vehiclesList.css";
 
 const VehiclesList = async () => {
   try {
-    const apiUrl = "https://urido.co.uk/api/vehicles";
+    const apiUrl = "https://api.urido.co.uk/vehicles";
     const response = await fetch(apiUrl);
     if (!response.ok) {
       throw new Error("Failed to fetch vehicles");

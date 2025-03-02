@@ -13,7 +13,7 @@ const useCurrentLocation = () => {
           const { latitude, longitude } = position.coords;
           try {
             const response = await axios.get(
-              `https://urido.co.uk/api/address?latitude=${latitude}&longitude=${longitude}`
+              `https://api.urido.co.uk/address?latitude=${latitude}&longitude=${longitude}`
             );
             const address = response.data.results[0]?.formatted_address;
             if (address) {

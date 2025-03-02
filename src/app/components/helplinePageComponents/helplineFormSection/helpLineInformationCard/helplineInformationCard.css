@@ -1,0 +1,42 @@
+.helpline-information-card {
+  background-color: #191919;
+  color: #ffffff;
+  width: 380px;
+  height: 360px;
+  border-radius: 12px;
+  padding: 30px 10px 5px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.information-card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+.information-card-row {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  max-width: 223px;
+}
+@media (max-width: 768px) {
+  .helpline-information-card {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+  .information-card-row{
+    max-width: none;
+    /* font-size: 20px; */
+    line-height: 30px;
+  }
+ .helpline-information-card-icon{
+  width: 25px;
+  height: 25px;
+ } 
+}

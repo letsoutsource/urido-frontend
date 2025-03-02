@@ -1,0 +1,43 @@
+.upComingRide-return-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+.upComingRide-return-heading {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #fee9cd;
+}
+.upComingRide-return-date-box,
+.upComingRide-no-return {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fbc472;
+  span {
+    font-weight: 900;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+}
+.upComingRide-no-return {
+  justify-content: center;
+}
+
+@media (max-width: 360px) {
+ .upComingRide-no-return{
+  width: 276px;
+ } 
+}

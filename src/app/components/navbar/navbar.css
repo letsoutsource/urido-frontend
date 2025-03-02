@@ -1,0 +1,106 @@
+.navbar-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.navbar-links {
+  display: flex;
+  gap: 50px;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+  .active-link {
+    color: #f9b443;
+  }
+}
+.black-color-links {
+  a {
+    color: #000000;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+.navbar-button-container {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 20px;
+  }
+  .navbar-logo-div{
+    display: flex;
+    gap: 20px;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .navbar-urido-logo{
+    width: 125px;
+    height: 33px;
+    margin-top: -6px;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    gap: 20px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 760px;
+  }
+  
+  .mobile-menu-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C8C8C8B2;
+    align-items: center;
+    padding: 20px;
+  }
+  .mobile-menu-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 27px;
+color: #000000;
+}
+.active-link {
+  color: #f9b443;
+}
+  }
+}
+@media (max-width: 360px) {
+  .navbar-urido-logo{
+    width: 110px;
+  }
+}

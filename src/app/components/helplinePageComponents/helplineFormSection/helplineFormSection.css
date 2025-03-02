@@ -1,0 +1,53 @@
+.helpline-form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 60px 0;
+  gap: 50px;
+}
+.helpline-details-section {
+  display: flex;
+  flex-direction: column;
+}
+.helpline-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55.2px;
+  text-align: left;
+  color: #000000;
+  padding: 10px 0;
+}
+.helpline-bottomline-1 {
+  width: 138px;
+  border-bottom: 2px solid #000000;
+}
+.helpline-bottomline-2 {
+  margin-top: 10px;
+  width: 34px;
+  border-bottom: 2px solid #000000;
+}
+.helpline-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #919191;
+  max-width: 686px;
+  margin-top: 20px;
+}
+.helpline-form-section {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .helpline-form-container{
+  padding: 40px 20px;
+  }
+  .helpline-form-section{
+    flex-direction: column;
+  }
+  .helpline-information-card{
+    order: 2;
+  }
+}

@@ -1,0 +1,108 @@
+.our-partners-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 0;
+}
+.our-partners-heading {
+  font-family: "Helvetica";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.our-partners-para {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #919191;
+  max-width: 909px;
+}
+.our-partners-logos {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  width: 1120px;
+  height: 375px;
+  display: grid;
+  column-gap: 150px;
+  padding: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.daddy-cab-logo {
+  margin-left: 45px;
+}
+
+@media (max-width: 768px) {
+  .our-partners-container {
+    padding: 40px 20px;
+  }
+  .our-partners-heading {
+    font-size: 30px;
+  }
+  .our-partners-para {
+    font-size: 13px;
+  }
+  .our-partners-logos {
+    column-gap: 50px;
+    row-gap: 10px;
+    padding: 40px;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .booking-logo {
+    width: 150px;
+    height: 60px;
+  }
+
+  .albatross-logo {
+    width: 111px;
+    height: 56px;
+    margin-left: 15px;
+  }
+
+  .saltire-logo {
+    width: 110px;
+    height: 36px;
+    margin-left: 20px; 
+  }
+
+  .daddy-cab-logo {
+    width: 86px;
+    height: 78px;
+    margin-left: 20px;
+  }
+
+  .lets-outsource-logo {
+    width: 154px;
+    height: 72px;
+  }
+
+  .jstelecom-logo {
+    width: 124px;
+    height: 33px;
+  }
+}
+@media (max-width: 360px) {
+  .our-partners-logos {
+    column-gap: 0;
+  }
+  .jstelecom-logo {
+    width: 100px;
+    margin-left: 20px;
+    height: 33px;
+  }
+  .lets-outsource-logo {
+    width: 140px;
+    height: 62px;
+}
+}

@@ -1,0 +1,106 @@
+.navbarProfile-container {
+  display: flex;
+  flex-direction: column;
+  width: 428px;
+  height: 350.02px;
+  background: #38383873;
+  backdrop-filter: blur(24.399999618530273px);
+  box-shadow: 0px 12px 29.9px 0px #000000b0;
+  border: 1px solid #8b7e414d;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbarProfile-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.navbarProfile-user-profile {
+  border-radius: 50%;
+}
+.navbarProfile-user-name {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+}
+.navbarProfile-user-email {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #b1b1b1;
+}
+.navbarProfile-buttons {
+  display: flex;
+  gap: 20px;
+}
+.navbarProfile-editButton-div {
+  background-color: transparent;
+  border: 0.9px solid #ffffff;
+  border-radius: 24px;
+  width: 180px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.navbarProfile-editButton-div:hover {
+  cursor: pointer;
+  background-color: #e0e0e01a;
+}
+.navbarProfile-edit-button {
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+}
+.navbarProfile-signOut-button {
+  font-size: 20px;
+  width: 128px;
+  height: 48px;
+  border-radius: 23.5px;
+  background-color: #c64232;
+  border: none;
+  color: #ffffff;
+}
+.navbarProfile-signOut-button:hover {
+  cursor: pointer;
+  background-color: #a92d22;
+}
+.profile-polygon {
+  position: absolute;
+  top: -15px;
+  left: 82%;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .navbarProfile-container{
+    width: 88vw;
+  }
+}
+@media (max-width:360px) {
+  .navbarProfile-container{
+    width: 88vw;
+  }
+  
+  .navbarProfile-editButton-div{
+    width: 138px;
+  }
+  .navbarProfile-edit-button{
+    font-size: 13px;
+  }
+  .navbarProfile-signOut-button{
+    font-size: 13px;
+    width: 110px;
+  }
+}

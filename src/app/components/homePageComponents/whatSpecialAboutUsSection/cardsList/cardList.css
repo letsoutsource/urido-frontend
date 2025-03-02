@@ -1,0 +1,107 @@
+.specialaboutus-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.specialaboutus-mobileView-card,
+.specialaboutus-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #fff9f0 0%, #fff9f0 100%),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 52%,
+      rgba(255, 255, 255, 0.565148) 85.91%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+  border: 1.3px solid #fff1db;
+  border-radius: 15.64px;
+  width: 32%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+}
+.specialaboutus-mobileView-card {
+  display: none;
+}
+.specialaboutus-card-head {
+  font-family: "Helvetica";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 31.29px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #564325;
+}
+.specialaboutus-card-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  max-width: 256px;
+  color: #897e6c;
+}
+.specialaboutus-card-largeScreenIcon{
+  display: block;
+}
+.specialaboutus-card-mobileIcon{
+  display: none;
+}
+@media (max-width: 768px) {
+  .specialaboutus-cards {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .specialaboutus-card {
+    width: 42vw;
+    padding: 20px;
+  }
+  .specialaboutus-mobileView-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fff9f0 0%, #fff9f0 100%),
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 52%,
+        rgba(255, 255, 255, 0.565148) 85.91%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+    border: 1.3px solid #fff1db;
+    border-radius: 15.64px;
+    justify-content: normal;
+    align-items: center;
+    gap: 10px;
+    width: 46%;
+    padding: 20px;
+  }
+  .specialaboutus-card-head {
+    font-size: 17px;
+  }
+  .specialaboutus-card-para {
+    font-size: 14px;
+  }
+  .bottomcard-icons {
+    display: none;
+  }
+  .specialaboutus-card-mobileIcon{
+    display: block;
+  }
+  .specialaboutus-card-largeScreenIcon{
+    display: none;
+  }
+  .specialaboutus-car{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .specialaboutus-card {
+    width: 40vw;
+  }
+  .specialaboutus-card-para{
+    font-size: 11px;
+  }
+  .specialaboutus-card-head {
+    font-size: 13px;
+}
+ }

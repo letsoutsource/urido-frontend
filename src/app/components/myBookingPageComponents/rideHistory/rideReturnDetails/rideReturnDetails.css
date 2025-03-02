@@ -1,0 +1,47 @@
+.ride-history-return-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+.ride-history-return-heading {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #919191;
+}
+.ride-history-return-date-box {
+  border: 1px solid #c1c1c1;
+  display: flex;
+  border-radius: 6px;
+  padding: 10px;
+  width: 310px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-weight: 900;
+    color: #919191;
+    margin-bottom: 10px;
+  }
+}
+.ride-history-no-return {
+  border: 1px solid #c1c1c1;
+  display: flex;
+  align-items: center;
+  width: 269px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 10px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .ride-history-no-return{
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+.specialaboutus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.specialaboutus-heading {
+  font-family: "Helvetica", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .specialaboutus-container{
+    padding: 80px 20px;
+  }
+  .specialaboutus-heading {
+    font-size: 30px;
+   }
+}

@@ -1,0 +1,46 @@
+.specialaboutus-bottomcard {
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background: linear-gradient(180deg, #fff9f0 0%, #fff9f0 100%),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 52%,
+      rgba(255, 255, 255, 0.565148) 85.91%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+  border: 1.3px solid #fff1db;
+  border-radius: 15.64px;
+  display: flex;
+  align-items: center;
+}
+.bottomcard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 55%;
+}
+.specialaboutus-bottomcard-head {
+  font-family: "Helvetica";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 31.29px;
+  letter-spacing: 0.5px;
+  color: #564325;
+}
+.specialaboutus-bottomcard-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 423px;
+  color: #897e6c;
+}
+.bottomcard-right {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .specialaboutus-bottomcard {
+    display: none;
+  }
+}

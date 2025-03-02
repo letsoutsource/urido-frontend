@@ -1,0 +1,22 @@
+.vehicleListSection-container {
+  margin: 0 auto;
+}
+.vehicleListSection-heading {
+  font-family: "Helvetica";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .vehicleListSection-container{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .vehicleListSection-heading{
+    font-size: 35px;
+
+  }
+}

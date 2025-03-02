@@ -1,0 +1,77 @@
+.upComingBooking-vehicle-details-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.upComingBooking-vehicle-image-wrapper {
+  position: relative;
+  height: 71px;
+  width: 72px;
+  background-color: #fbc472;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upComingBooking-vehicles-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.upComingBooking-vehicle-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fee9cd;
+}
+.upComingBooking-vehicle-capacity {
+  display: flex;
+  background-color: #fbc472;
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  span {
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+}
+.upComingBooking-vehicle-capacity-detail {
+  display: flex;
+  gap: 5px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+.ride-history-price {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .upComingBooking-vehicles-details{
+    gap: 10px;
+  }
+  .upComingBooking-vehicle-details-row{
+    gap: 10px;
+  }
+}
+@media (max-width:360px) {
+  .upComingBooking-vehicle-capacity{
+    width: 203px;
+  }
+  .upComingBooking-vehicle-image-wrapper{
+    height: 54px;
+  }
+  .upComingBooking-vehicle-image{
+    width: 50px;
+    height: 40px;
+  }
+}

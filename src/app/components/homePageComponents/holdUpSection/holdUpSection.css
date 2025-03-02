@@ -1,0 +1,55 @@
+.holdUpSection-container {
+  background-color: #f9b443;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 0;
+}
+.holdUpSection-heading {
+  font-family: "Helvetica";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+}
+.holdUpSection-para {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 813px;
+}
+.holdUpSection-button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 6px;
+  width: 224px;
+  height: 47px;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holdUpSection-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .holdUpSection-container{
+    padding: 40px 20px;
+  }
+  .holdUpSection-heading{
+    font-size: 30px;
+  }
+  .holdUpSection-para{
+    font-size: 14px;
+  }
+}

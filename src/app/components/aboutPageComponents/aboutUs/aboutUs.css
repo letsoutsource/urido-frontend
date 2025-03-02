@@ -1,0 +1,155 @@
+.aboutUs-container {
+  display: flex;
+  justify-self: baseline;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 70px 0;
+  max-height: fit-content;
+  width: 1441px;
+}
+.aboutUs-image {
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.aboutUs-heading {
+  font-family: "Helvetica";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 55.2px;
+  text-align: left;
+  color: #ffffff;
+}
+.aboutUs-bottomline-1 {
+  width: 138px;
+  border-bottom: 2px solid #ffffff;
+}
+.aboutUs-bottomline-2 {
+  margin-top: 10px;
+  width: 34px;
+  border-bottom: 2px solid #ffffff;
+}
+.aboutUs-card {
+  width: 650px;
+  height: 384px;
+  border-radius: 12px;
+  background-color: #38383873;
+  backdrop-filter: blur(24.4px);
+  border: 1px solid #8b7e414d;
+  padding: 40px 35px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutUs-card-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: #ffffff;
+  span {
+    color: #fbcc02;
+  }
+}
+.aboutUs-card-div1 {
+  display: flex;
+  /* align-items: center; */
+}
+.decorater-letter {
+  font-size: 51px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.aboutUs-card-para1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 2px;
+}
+.aboutUs-card-para2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: -20px;
+  max-width: 580px;
+}
+
+@media (max-width: 768px) {
+  .aboutUs-container {
+    padding: 40px 20px;
+    width: 97.9vw;
+  }
+  .aboutUs-image {
+    height: 100vh;
+  }
+  .aboutUs-bottomline-1 {
+    width: 90px;
+  }
+  .aboutUs-bottomline-2 {
+    width: 21px;
+  }
+  .aboutUs-card {
+    width: fit-content;
+    height: fit-content;
+  }
+  .aboutUs-card-heading {
+    font-size: 20px;
+    max-width: 300px;
+  }
+  .aboutUs-card-div1{
+  }
+  .aboutUs-card-para1 {
+    font-size: 14px;
+    align-items: baseline;
+    /* margin-left: 5px; */
+    br{
+      display: none;
+    }
+    span{
+      display: none;
+    }
+  }
+  .decorater-letter{
+    font-size: 40px;
+  }
+  .aboutUs-card-para2 {
+    font-size: 15px;
+    width: 106%;
+  }
+}
+@media (max-width: 360px) {
+  .aboutUs-container{
+    width: 98vw;
+  }
+  .aboutUs-card-heading{
+   font-size: 17px;
+  }
+  .aboutUs-card-para1{
+    font-size: 13px;
+    word-break: keep-all;
+    br{
+      display: none;
+    }
+    span{
+      display: none;
+    }
+  }
+  .aboutUs-card-para2{
+    font-size: 13px;
+    br{
+      display: none;
+    }
+  }
+}

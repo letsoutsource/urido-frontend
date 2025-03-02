@@ -1,0 +1,56 @@
+.customer-reviews-cards {
+  display: flex;
+  gap: 30px;
+  max-width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 0 50px;
+}
+.customer-review-card {
+  flex: 0 0 auto;
+  width: 449px;
+  height: 228px;
+  background-color: #222629;
+  border-radius: 13.61px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.customer-review-card-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+.customer-review-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-review-author-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.customer-review-author-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .customer-reviews-cards {
+    padding: 0px;
+  }
+  .customer-review-card {
+    width: 100%;
+  }
+  .customer-review-card-para {
+    max-width: 342px;
+  }
+}

@@ -1,0 +1,36 @@
+.upComingRide-date-row {
+  display: flex;
+  justify-content: space-between;
+}
+.upComingRide-date-box {
+  /* color: #f9b443; */
+  /* background: #f9b44333; */
+  /* border: 0.7px solid #f9b443; */
+  color: #f9b443;
+  background-color: #fff8ee;
+  border: none;
+  display: flex;
+
+  border-radius: 6px;
+  padding: 10px;
+  width: 310px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+.upComingRide-date {
+  display: flex;
+  gap: 5px;
+}
+.upComingRide-time {
+  display: flex;
+  gap: 5px;
+}
+.upComingRide-dot {
+  font-weight: 900;
+  margin-bottom: 10px;
+}

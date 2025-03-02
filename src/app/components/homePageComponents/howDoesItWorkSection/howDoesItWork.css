@@ -1,0 +1,52 @@
+.howDoesItWork-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+}
+.howDoesItWork-heading {
+  font-family: "Helvetica";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.howDoesItWork-content {
+  display: flex;
+  padding: 60px 0;
+  gap: 100px;
+}
+.howDoesItWork-content-right {
+  padding: 30px 0;
+}
+.howDoesItWork-content-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #595959;
+  max-width: 601px;
+}
+.howDoesItWork-content-left{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .howDoesItWork-container{
+    padding: 40px 20px;
+  }
+  .howDoesItWork-content-right{
+    padding: 0;
+  }
+  .howDoesItWork-content{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .howDoesItWork-content-left{
+    display: none;
+  }
+}

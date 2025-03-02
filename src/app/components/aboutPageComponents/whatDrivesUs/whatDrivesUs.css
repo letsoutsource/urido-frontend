@@ -1,0 +1,74 @@
+.what-drives-us-container {
+  background-color: #f0f0f0;
+  padding: 120px 0;
+}
+.what-drives-us-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.what-drives-us-heading {
+  font-family: "Helvetica";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.what-drives-us-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.what-drives-us-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 352px;
+  height: 484px;
+  border-radius: 16px;
+}
+.what-drives-us-card-heading {
+  font-family: "Helvetica";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.6px;
+  text-align: center;
+  color: #000000;
+}
+.what-drives-us-card-line {
+  width: 194px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.what-drives-us-card-para {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #919191;
+  max-width: 242px;
+}
+
+@media (max-width: 768px) {
+  .what-drives-us-container{
+    padding: 40px 20px;
+  }
+  .what-drives-us-content{
+    gap: 50px;
+  }
+ .what-drives-us-cards {
+   flex-direction: column;
+   gap: 30px;
+ }
+ .what-drives-us-card {
+   width: 100%;
+   height: auto;
+   padding: 40px;
+ }
+}

@@ -1,0 +1,64 @@
+.myProfile-navbar-button,
+.signIn-navbar-button {
+  width: 165px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 6px;
+  color: #ffffff;
+  justify-content: space-around;
+}
+
+.signIn-navbar-button {
+  gap: 5px;
+  background-color: #f9b443;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+}
+.signIn-navbar-button:hover {
+  cursor: pointer;
+  background-color: #f8a31a;
+}
+.myProfile-navbar-button {
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 20px 30px;
+}
+.myProfile-navbar-button:hover {
+  cursor: pointer;
+  background-color: #e0e0e01a;
+}
+
+.credentials-popup {
+  position: absolute;
+  top: 250%;
+  left: -34%;
+  /* left: -56px; */
+  transform: translate(-50%);
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .myProfile-navbar-button,
+  .signIn-navbar-button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .credentials-popup {
+    top: 234%;
+    left: -89%;
+  }
+}
+@media (max-width: 360px) {
+  .credentials-popup {
+    left: -60%;
+  }
+}

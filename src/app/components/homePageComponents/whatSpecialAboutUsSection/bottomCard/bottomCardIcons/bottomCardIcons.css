@@ -1,0 +1,21 @@
+.specialaboutus-bottomcard-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .specialaboutus-bottomcard-icon-div {
+    background-color: #897e6c;
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .specialaboutus-bottomcard-icon-div:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
+  

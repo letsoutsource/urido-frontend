@@ -1,0 +1,155 @@
+.vehiclesCard-Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.vehiclesCard-Card {
+  display: flex;
+  width: 464px;
+  height: 114px;
+  background-color: #ffffff;
+  border-radius: 6.17px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+  flex-direction: row;
+}
+.vehiclesCard-top {
+  display: flex;
+  gap: 15px;
+}
+.vehiclesCard-VehicleDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vehiclesCard-VehicleName {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #858585;
+}
+.vehiclesCard-VehicleCapacityDetails {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: center;
+  height: 36px;
+}
+.vehicleCard-VehicleCapacity {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.vehiclesCard-priceAndButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+}
+.vehiclesCard-price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: right;
+  color: #f9b443;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.vehiclesCard-button {
+  width: 115px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #eaeaea;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+.vehiclesCard-button:hover {
+  background-color: #f9b443;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .vehiclesCard-Card {
+    width: 100%;
+    flex-direction: column;
+    height: fit-content;
+    gap: 5px;
+    padding: 13px;
+  }
+  .vehiclesCard-top {
+    display: flex;
+    gap: 20px;
+  }
+  .vehiclesCard-bottom {
+    justify-content: space-between;
+  }
+  .vehicleCard-VehicleCapacity {
+    gap: 5px;
+  }
+  .vehiclesCard-priceAndButton {
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-left: 35px;
+  }
+  .vehiclesCard-price-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .vehiclesCard-price {
+    font-size: 30px;
+  }
+  .vehiclesCard-button {
+    width: 135px;
+  }
+}
+@media (max-width: 360px) {
+  .vehicleCard-image{
+    width: 120px;
+    height: 80px;
+  }
+  .vehiclesCard-VehicleCapacityDetails{
+    gap: 8px;
+    font-size: 14px;
+  }
+  .vehiclesCard-VehicleName{
+    font-size: 14px;
+  }
+  .vehiclesCard-priceAndButton{
+    margin-left: 30px;
+    
+  }
+  .vehiclesCard-price-icon{
+    width: 23px;
+    height: 23px;
+  }
+  .vehiclesCard-price{
+    font-size: 25px;
+  }
+  .vehiclesCard-button{
+    width: 100px;
+  }
+  .vehicleCard-passenger-icon,
+  .vehicleCard-luggage-icon{
+    width: 14px;
+    height: 14px;
+  }
+}

@@ -1,0 +1,31 @@
+.upComingBookings-container {
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upComingBookings-box {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 55px; */
+  width: 1200px;
+  height: fit-content;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fabc5c 0%, #f9b443 100%);
+  box-shadow: 0px 6px 13.8px 0px #00000029;
+  padding: 30px;
+}
+.ride-dateAndReturn-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .upComingBookings-box {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+}

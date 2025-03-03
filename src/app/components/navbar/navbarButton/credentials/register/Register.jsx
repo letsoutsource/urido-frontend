@@ -10,6 +10,7 @@ import {
   handleAuthentication,
 } from "../../../../../../../services/authService";
 import { toast } from "react-toastify";
+import Cookies from "js-cookie";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -28,8 +29,12 @@ const Register = () => {
       const accessToken = await authenticateUser(
         "https://api.urido.co.uk/user/register",
         data,
-        { withCredentials: true }
       );
+      Cookies.set("accessToken", accessToken, {
+        expires: 1, 
+        secure: true, 
+        sameSite: "None",
+      });
       handleAuthentication(dispatch, accessToken);
       toast.success("You Are Now User Of Urido");
     } catch (error) {
@@ -38,7 +43,6 @@ const Register = () => {
     }
     setLoading(false);
   };
-
   return (
     <div className="register-container">
       <div className="register-container-header">

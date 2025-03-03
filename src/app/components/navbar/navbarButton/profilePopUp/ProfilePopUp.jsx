@@ -7,6 +7,7 @@ import axios from "axios";
 import { hide } from "@/store/slices/credentialsSlice";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Cookies from "js-cookie";
 const ProfilePopUp = () => {
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -16,9 +17,12 @@ const ProfilePopUp = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://api.urido.co.uk/user/current", {
-          withCredentials: true,
-        });
+        const response = await axios.get(
+          "https://api.urido.co.uk/user/current",
+          {
+            withCredentials: true,
+          }
+        );
         const userData = response.data.data;
         setProfilePic(userData?.profilePic || "/profilePic.png");
       } catch (error) {
@@ -33,9 +37,17 @@ const ProfilePopUp = () => {
 
   const handleSignOutClick = async () => {
     try {
-      const response = await axios.get("https://api.urido.co.uk/user/logout", {
-        withCredentials: true,
+      const accessToken = Cookies.get("accessToken");
+      if (!accessToken) {
+        console.error("No access token found in cookies");
+        return;
+      }
+      await axios.get("https://api.urido.co.uk/user/logout", {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
       });
+      Cookies.remove("accessToken");
       dispatch(logout());
       dispatch(hide());
     } catch (error) {
@@ -61,7 +73,7 @@ const ProfilePopUp = () => {
             className="navbarProfile-user-profile"
             priority
           />
-      )}
+        )}
         <h5 className="navbarProfile-user-name">{user?.userName}</h5>
         <h6 className="navbarProfile-user-email">{user?.email}</h6>
       </div>

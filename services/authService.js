@@ -6,10 +6,18 @@ import { decodeToken } from "../utils/Methods";
 
 export const authenticateUser = async (endpoint, data) => {
   try {
-    await axios.post(endpoint, data, { withCredentials: true });
-    const accessToken = Cookies.get("accessToken");
-    if (!accessToken) throw new Error("Access token not found in cookies");
-    return accessToken;
+    const response = await axios.post(endpoint, data, {
+      withCredentials: true,
+    });
+    const accessToken = response.data.data.accessToken
+    if (accessToken) {
+      Cookies.set("accessToken", accessToken, {
+        expires: 1,
+        secure: true,
+        sameSite: "None",
+      });
+      return accessToken;
+    }
   } catch (error) {
     throw error.response?.data?.message || error.message;
   }

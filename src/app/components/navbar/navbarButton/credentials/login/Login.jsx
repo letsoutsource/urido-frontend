@@ -24,13 +24,20 @@ const Login = () => {
     if (isForgotPassword) {
       if (isOtpSent) {
         try {
-          await axios.post(
+          const response = await axios.post(
             "https://api.urido.co.uk/user/verify-reset-password",
             data,
             { withCredentials: true }
           );
+          const accessToken = response.data.data.accessToken;
+          if (response.data.data.accessToken) {
+            Cookies.set("accessToken", accessToken, {
+              expires: 1,
+              secure: true,
+              sameSite: "None",
+            });
+          }
           toast.success("Your password has been successfully reset.");
-          const accessToken = Cookies.get("accessToken");
           handleAuthentication(dispatch, accessToken);
           setIsForgotPassword(false);
           setIsOtpSent(false);
@@ -41,7 +48,10 @@ const Login = () => {
         }
       } else {
         try {
-          await axios.post("https://api.urido.co.uk/user/forgot-password", data);
+          await axios.post(
+            "https://api.urido.co.uk/user/forgot-password",
+            data
+          );
           toast.success("OTP has been sent to your email.");
           setIsOtpSent(true);
         } catch (error) {

@@ -5,10 +5,10 @@
   "/about/page": "/about",
   "/edit/page": "/edit",
   "/faq/page": "/faq",
-  "/mybooking/page": "/mybooking",
   "/help/page": "/help",
+  "/mybooking/page": "/mybooking",
   "/page": "/",
   "/payment/page": "/payment",
-  "/privacyPolicy/page": "/privacyPolicy",
-  "/serviceAgreement/page": "/serviceAgreement"
+  "/serviceAgreement/page": "/serviceAgreement",
+  "/privacyPolicy/page": "/privacyPolicy"
 }

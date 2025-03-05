@@ -28,11 +28,7 @@ export const useBooking = () => {
   const isGetQuoteDisabled = !fromLocation || !toLocation;
 
   const toggleVehicleCard = () => {
-    if (!isLoggedIn) {
-      setShowSignInPopup((prev) => !prev);
-    } else {
       setIsVehicleCardOpen((prev) => !prev);
-    }
   };
 
   const handleDistanceDurationFetched = (fetchedDistance, fetchedDuration) => {
@@ -75,6 +71,7 @@ export const useBooking = () => {
     isReturnTrip,
     setIsReturnTrip,
     isVehicleCardOpen,
+    setIsVehicleCardOpen,
     showSignInPopup,
     setShowSignInPopup, 
     fromLocation,

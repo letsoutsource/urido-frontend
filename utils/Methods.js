@@ -30,13 +30,18 @@ export const decodeToken = (token) => {
 };
 export const createBooking = async (bookingData) => {
   const accessToken = Cookies.get("accessToken");
-  if (!accessToken) throw new Error("Access token not found in cookies");
-  const decodedToken = decodeToken(accessToken);
-  if (!decodedToken) throw new Error("Failed to decode token");
-  const userEmail = decodedToken.email;
-  const phone = decodedToken.phone;
-  const userName = decodedToken.userName;
-
+  let userEmail, phone, userName;
+  if (accessToken) {
+    const decodedToken = decodeToken(accessToken);
+    if (!decodedToken) throw new Error("Failed to decode token");
+    userEmail = decodedToken.email;
+    phone = decodedToken.phone;
+    userName = decodedToken.userName;
+  } else {
+    userEmail = bookingData.passengerEmail;
+    phone = bookingData.passengerPhone;
+    userName = bookingData.passengerName;
+  }
   const emailData = {
     phone: phone,
     subject: "Booking Confirmation",
@@ -52,6 +57,13 @@ export const createBooking = async (bookingData) => {
         withCredentials: true,
       }
     );
+    if (bookingResponse.data.data.accessToken) {
+      Cookies.set("accessToken", bookingResponse.data.data.accessToken, {
+        expires: 1,
+        secure: true,
+        });
+    }
+
     const emailResponse = await axios.post(
       "/frontend-api/sendBookingEmail",
       emailData,

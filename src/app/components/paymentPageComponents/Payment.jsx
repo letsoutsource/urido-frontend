@@ -1,37 +1,40 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import { FaCreditCard, FaWallet, FaUser } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import { FaCreditCard, FaWallet, FaUser } from "react-icons/fa";
 import { MdChevronRight } from "react-icons/md";
-import './payment.css';
-import { useSelector } from 'react-redux';
-import { useRouter } from 'next/navigation';
-import { toast } from 'react-toastify';
-import { createBooking, decodeToken } from '../../../../utils/Methods';
-import Cookies from 'js-cookie';
+import "./payment.css";
+import { useDispatch, useSelector } from "react-redux";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
+import { createBooking, decodeToken } from "../../../../utils/Methods";
+import Cookies from "js-cookie";
+import { login } from "@/store/slices/authSlice";
 
 const Payment = () => {
   const router = useRouter();
+  const dispatch = useDispatch();
   const bookingData = useSelector((state) => state.booking.bookingData);
+  const { isLoggedIn } = useSelector((state) => state.auth);
   const [isConfirming, setIsConfirming] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [userData, setUserData] = useState({
-    username: '',
-    email: '',
-    phone: ''
+    username: "",
+    email: "",
+    phone: "",
   });
 
   useEffect(() => {
     if (bookingData == null) {
-      router.push('/');
+      router.push("/");
     } else {
       const accessToken = Cookies.get("accessToken");
       if (accessToken) {
         const decodedToken = decodeToken(accessToken);
         if (decodedToken) {
           setUserData({
-            username: decodedToken.userName || '',
-            email: decodedToken.email || '',
-            phone: decodedToken.phone || ''
+            username: decodedToken.userName || "",
+            email: decodedToken.email || "",
+            phone: decodedToken.phone || "",
           });
         }
       }
@@ -43,9 +46,23 @@ const Payment = () => {
   }
 
   const handleUsernameChange = (e) => {
-    setUserData(prev => ({
+    setUserData((prev) => ({
       ...prev,
-      username: e.target.value
+      username: e.target.value,
+    }));
+  };
+
+  const handleEmailChange = (e) => {
+    setUserData((prev) => ({
+      ...prev,
+      email: e.target.value,
+    }));
+  };
+
+  const handlePhoneChange = (e) => {
+    setUserData((prev) => ({
+      ...prev,
+      phone: e.target.value,
     }));
   };
 
@@ -56,15 +73,20 @@ const Payment = () => {
   const confirmPayment = async () => {
     try {
       setIsProcessing(true);
-      const distance = parseFloat(bookingData.distance.replace(/[^\d.-]/g, ''));
+      const distance = parseFloat(bookingData.distance.replace(/[^\d.-]/g, ""));
       const dataToSend = {
         ...bookingData,
         distance,
         passengerName: userData.username,
         passengerEmail: userData.email,
-        passengerPhone: userData.phone
+        passengerPhone: userData.phone,
       };
       await createBooking(dataToSend);
+      dispatch(login({
+        email: userData.email,
+        userName: userData.username,
+        phone: userData.phone,
+      }));
       toast.success("Booking Created Successfully!");
       router.push("/mybooking");
     } catch (error) {
@@ -73,15 +95,10 @@ const Payment = () => {
       setIsProcessing(false);
     }
   };
+
   return (
     <div className="payment-container">
       <div className="payment-wrapper">
-        {/* Header */}
-        <div className="payment-header">
-          <h1>Complete Your Booking</h1>
-          <p>Please review your booking details and select a payment method</p>
-        </div>
-
         {/* Passenger Details Card */}
         <div className="card">
           <div className="card-header">
@@ -102,12 +119,28 @@ const Payment = () => {
                 />
               </div>
               <div className="passenger-field">
-                <label>Email</label>
-                <div className="passenger-readonly">{userData?.email}</div>
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={userData?.email}
+                  onChange={handleEmailChange}
+                  className="passenger-input"
+                  placeholder="Enter your email"
+                  disabled={isLoggedIn}
+                />
               </div>
               <div className="passenger-field">
-                <label>Phone</label>
-                <div className="passenger-readonly">{userData?.phone}</div>
+                <label htmlFor="phone">Phone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  value={userData?.phone}
+                  onChange={handlePhoneChange}
+                  className="passenger-input"
+                  placeholder="Enter your phone number"
+                  disabled={isLoggedIn}
+                />
               </div>
             </div>
           </div>
@@ -140,11 +173,15 @@ const Payment = () => {
                 <>
                   <div className="booking-item">
                     <div className="booking-label">Return Date</div>
-                    <div className="booking-value">{bookingData.returnDate}</div>
+                    <div className="booking-value">
+                      {bookingData.returnDate}
+                    </div>
                   </div>
                   <div className="booking-item">
                     <div className="booking-label">Return Time</div>
-                    <div className="booking-value">{bookingData.returnTime}</div>
+                    <div className="booking-value">
+                      {bookingData.returnTime}
+                    </div>
                   </div>
                 </>
               )}
@@ -191,23 +228,15 @@ const Payment = () => {
           </div>
           <div className="card-content">
             <div className="payment-methods">
-              <div 
-                className="payment-method-option disabled"
-              >
-                <input
-                  type="radio"
-                  className="payment-method-radio"
-                  disabled
-                />
+              <div className="payment-method-option disabled">
+                <input type="radio" className="payment-method-radio" disabled />
                 <div className="payment-method-label">
                   <FaCreditCard className="icon" />
                   <span>Credit/Debit Card (Disabled)</span>
                 </div>
               </div>
-              
-              <div 
-                className={`payment-method-option selected`}
-              >
+
+              <div className={`payment-method-option selected`}>
                 <input
                   type="radio"
                   className="payment-method-radio"
@@ -222,7 +251,7 @@ const Payment = () => {
             </div>
 
             {!isConfirming ? (
-              <button 
+              <button
                 className="button button-primary"
                 onClick={handlePaymentSubmit}
               >
@@ -234,18 +263,18 @@ const Payment = () => {
                 <p className="confirmation-message">
                   Please confirm your cash payment on delivery
                 </p>
-                <button 
+                <button
                   className="button button-primary"
                   onClick={confirmPayment}
-                  disabled={isProcessing} 
-                  >
+                  disabled={isProcessing}
+                >
                   {isProcessing ? "Processing..." : "Confirm Payment"}
                 </button>
-                <button 
+                <button
                   className="button button-outline"
                   onClick={() => setIsConfirming(false)}
-                  disabled={isProcessing} 
-                  >
+                  disabled={isProcessing}
+                >
                   Back
                 </button>
               </div>

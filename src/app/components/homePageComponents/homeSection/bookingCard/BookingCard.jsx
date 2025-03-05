@@ -38,8 +38,8 @@ const BookingCard = () => {
     setReturnDate,
     returnTime,
     setReturnTime,
+    setIsVehicleCardOpen,
   } = useBooking();
-
   return (
     <form
       className="home-booking-card-container"
@@ -139,7 +139,7 @@ const BookingCard = () => {
         />
       )}
       {showSignInPopup && (
-        <SignInPopup setShowSignInPopup={setShowSignInPopup} />
+        <SignInPopup setShowSignInPopup={setShowSignInPopup} setIsVehicleCardOpen={setIsVehicleCardOpen} />
       )}
     </form>
   );

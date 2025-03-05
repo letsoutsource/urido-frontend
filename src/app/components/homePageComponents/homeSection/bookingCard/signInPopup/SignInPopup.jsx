@@ -1,16 +1,12 @@
 "use client";
-import { useDispatch } from "react-redux";
 import "./signInPopup.css";
-import { toggle } from "@/store/slices/credentialsSlice";
 import { useEffect, useRef } from "react";
 
-const SignInPopup = ({ setShowSignInPopup }) => {
-  const dispatch = useDispatch();
+const SignInPopup = ({ setShowSignInPopup,setIsVehicleCardOpen }) => {
   const popupRef = useRef(null);
-
   const handleSignInButtonClick = () => {
     setShowSignInPopup(false);
-    dispatch(toggle());
+    setIsVehicleCardOpen(true)
   };
 
   const handleOutsideClick = (event) => {
@@ -31,13 +27,13 @@ const SignInPopup = ({ setShowSignInPopup }) => {
       <div className="signInPopup-content" ref={popupRef}>
         <h4 className="signInPopup-heading">Sign In to Book Your Ride!</h4>
         <p className="signInPopup-para">
-          Create an account or log in to book your ride and access all features.
+          Not ready to sign in? No problem! You can book as a guest 
         </p>
         <button
           className="signInPopup-button"
           onClick={handleSignInButtonClick}
         >
-          Sign In
+          Book As Guest
         </button>
       </div>
     </div>

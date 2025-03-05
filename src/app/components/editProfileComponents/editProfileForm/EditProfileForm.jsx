@@ -5,15 +5,23 @@ import InputField from "./inputFields/InputField";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import { initializeUser } from "../../../../../services/authService";
+import Cookies from "js-cookie";
 const EditProfileForm = ({ register, handleSubmit }) => {
   const dispatch = useDispatch();
   const onSubmit = async (data) => {
     try {
+      const accessToken = Cookies.get("accessToken");
+      if (!accessToken) {
+        console.error("No access token found in cookies");
+        return;
+      }
       const response = await axios.put(
         "https://api.urido.co.uk/user/update",
         data,
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
         }
       );
       initializeUser(dispatch);

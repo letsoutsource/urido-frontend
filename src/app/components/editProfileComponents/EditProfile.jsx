@@ -7,6 +7,7 @@ import EditProfileForm from "./editProfileForm/EditProfileForm";
 import UploadImage from "./uploadImage/UploadImage";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 const EditProfile = () => {
   const { register, handleSubmit, setValue } = useForm();
   const router = useRouter();
@@ -31,9 +32,19 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://api.urido.co.uk/user/current", {
-          withCredentials: true,
-        });
+        const accessToken = Cookies.get("accessToken");
+        if (!accessToken) {
+          console.error("No access token found in cookies");
+          return;
+        }
+        const response = await axios.get(
+          "https://api.urido.co.uk/user/current",
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        );
         const userData = response.data.data;
         setProfilePic(userData.profilePic);
         setValue("userName", userData.userName);

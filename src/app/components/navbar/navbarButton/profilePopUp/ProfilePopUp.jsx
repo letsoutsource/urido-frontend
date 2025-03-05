@@ -17,10 +17,17 @@ const ProfilePopUp = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
+        const accessToken = Cookies.get("accessToken");
+        if (!accessToken) {
+          console.error("No access token found in cookies");
+          return;
+        }
         const response = await axios.get(
           "https://api.urido.co.uk/user/current",
           {
-            withCredentials: true,
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
           }
         );
         const userData = response.data.data;

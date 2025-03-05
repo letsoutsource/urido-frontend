@@ -4,6 +4,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import UpComingBookingsPage from "../components/myBookingPageComponents/upComingBookingPage/UpComingBookingsPage";
 import { RideHistory } from "../components";
+import Cookies from "js-cookie";
 const MyBooking = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const [rideData, setRideData] = useState([]);
@@ -17,9 +18,18 @@ const MyBooking = () => {
     }
     const fetchRideData = async () => {
       try {
+        const accessToken = Cookies.get("accessToken");
+        if (!accessToken) {
+          console.error("No access token found in cookies");
+          return;
+        }
         const response = await axios.get(
           "https://api.urido.co.uk/booking/my-bookings",
-          { withCredentials: true }
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
         );
         if (response.data.success) {
           setRideData(response.data.data);
@@ -41,12 +51,12 @@ const MyBooking = () => {
   }
   const pendingStatuses = ["Pending", "Process", "Accepted"];
   const completedStatuses = ["Completed", "Rejected", "Canceled"];
-  
-  const pendingRides = rideData.filter((ride) => 
+
+  const pendingRides = rideData.filter((ride) =>
     pendingStatuses.includes(ride?.status)
   );
-  
-  const completedRides = rideData.filter((ride) => 
+
+  const completedRides = rideData.filter((ride) =>
     completedStatuses.includes(ride?.status)
   );
   return (

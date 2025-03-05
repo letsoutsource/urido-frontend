@@ -4,6 +4,7 @@ import Image from "next/image";
 import AvatarEditor from "react-avatar-editor";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Cookies from "js-cookie";
 
 const UploadImage = ({ profilePic, setProfilePic }) => {
   const [previewImage, setPreviewImage] = useState("/profilePic.png");
@@ -36,12 +37,19 @@ const UploadImage = ({ profilePic, setProfilePic }) => {
         const formData = new FormData();
         formData.append("file", blob, selectedImage.name);
         try {
+          const accessToken = Cookies.get("accessToken");
+          if (!accessToken) {
+            console.error("No access token found in cookies");
+            return;
+          }
           const response = await axios.post(
             "https://api.urido.co.uk/user/update-profile-pic",
             formData,
             {
-              headers: { "Content-Type": "multipart/form-data" },
-              withCredentials: true,
+              headers: {
+                "Content-Type": "multipart/form-data",
+                Authorization: `Bearer ${accessToken}`,
+              },
             }
           );
           setProfilePic(response.data.data.profilePicUrl);

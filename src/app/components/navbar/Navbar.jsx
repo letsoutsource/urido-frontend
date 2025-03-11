@@ -39,17 +39,17 @@ const Navbar = () => {
           <Link href="/">
             {blackThemeLinks ? (
               <Image
-                src="/uRidoblack.jpeg"
-                width={160}
-                height={50}
+                src="/uRidoblack.png"
+                width={135}
+                height={30}
                 alt="uRido"
                 className="navbar-urido-logo"
               />
             ) : (
               <Image
-                src="/uRidowhite.png"
-                width={160}
-                height={50}
+                src="/uridowhite.png"
+                width={135}
+                height={30}
                 alt="uRido"
                 className="navbar-urido-logo"
               />
@@ -77,9 +77,9 @@ const Navbar = () => {
           <div className="mobile-menu">
             <div className="mobile-menu-header">
               <Image
-                src="/uRidoblack.jpeg"
-                width={120}
-                height={40}
+                src="/uridoblack.png"
+                width={92}
+                height={25}
                 alt="uRido"
               />
               <Image

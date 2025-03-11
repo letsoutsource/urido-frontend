@@ -56,8 +56,8 @@ body {
 .ring-1 {
   width: 120px;
   height: 120px;
-  border-top: 2px solid #F9B443;
-  border-right: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
+  border-right: 2px solid #f9b443;
   animation: spin3D 2s linear infinite;
 }
 
@@ -66,8 +66,8 @@ body {
   height: 100px;
   top: 10px;
   left: 10px;
-  border-top: 2px solid #F9B443;
-  border-left: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
+  border-left: 2px solid #f9b443;
   animation: spin3D 2s linear infinite reverse;
 }
 
@@ -76,7 +76,7 @@ body {
   height: 80px;
   top: 20px;
   left: 20px;
-  border-top: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
   animation: spin3D 1.5s linear infinite;
 }
 
@@ -88,8 +88,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: radial-gradient(circle, #ffffff, #F9B443);
-  box-shadow: 0 0 20px #F9B443;
+  background: radial-gradient(circle, #ffffff, #f9b443);
+  box-shadow: 0 0 20px #f9b443;
 }
 
 .loading-text {
@@ -101,7 +101,7 @@ body {
 }
 
 .loading-text span {
-  color: #F9B443;
+  color: #f9b443;
   animation: pulse 1.4s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(249, 180, 67, 0.5);
 }

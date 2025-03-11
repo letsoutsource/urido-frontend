@@ -7,8 +7,8 @@ const RideVehicleDetails = ({ vehicle, passengerCount, luggageCount }) => {
         <Image
           src="/ride-history-car.png"
           alt="car"
-          height={50}
-          width={68}
+          height={47}
+          width={52}
           className="ride-history-vehicle-image"
         />
       </div>

@@ -15,8 +15,8 @@ const UpComingBookingVehicleSection = ({
           <Image
             src="/ride-history-car.png"
             alt="car"
-            height={50}
-            width={68}
+            height={47}
+            width={52}
             className="upComingBooking-vehicle-image"
           />
         </div>
@@ -29,7 +29,7 @@ const UpComingBookingVehicleSection = ({
                 src="/passenger.png"
                 alt="passenger"
                 height={18}
-                width={18}
+                width={19}
               />
               <h5 className="upComingBooking-vehicle-passengers">
                 {passengerCount}

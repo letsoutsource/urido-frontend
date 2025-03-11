@@ -16,24 +16,49 @@ export const useBooking = () => {
   const [showSignInPopup, setShowSignInPopup] = useState(false);
   const [distance, setDistance] = useState("N/A");
   const [travelDuration, setTravelDuration] = useState("N/A");
-
-  const [bookingDate, setBookingDate] = useState(null);
-  const [bookingTime, setBookingTime] = useState(null);
-  const [returnDate, setReturnDate] = useState(null);
-  const [returnTime, setReturnTime] = useState(null);
-
+  const now = new Date()
+  const [bookingDate, setBookingDate] = useState(now);
+  const [bookingTime, setBookingTime] = useState(now);
+  const [returnDate, setReturnDate] = useState(now);
+  const [returnTime, setReturnTime] = useState(now);
   const fromLocation = watch("fromLocation");
   const toLocation = watch("toLocation");
-
   const isGetQuoteDisabled = !fromLocation || !toLocation;
 
   const toggleVehicleCard = () => {
-      setIsVehicleCardOpen((prev) => !prev);
+    setIsVehicleCardOpen((prev) => !prev);
   };
 
   const handleDistanceDurationFetched = (fetchedDistance, fetchedDuration) => {
     setDistance(fetchedDistance);
     setTravelDuration(fetchedDuration);
+  };
+
+  const calculateTimeDifference = () => {
+    if (!isReturnTrip) {
+      return null;
+    }
+    const now = new Date();
+    const bookingDateTime =
+      bookingDate && bookingTime
+        ? new Date(
+            `${formatDateTime(bookingDate)}T${formatDateTime(
+              bookingTime,
+              true
+            )}`
+          )
+        : now;
+
+    const returnDateTime =
+      returnDate && returnTime
+        ? new Date(
+            `${formatDateTime(returnDate)}T${formatDateTime(returnTime, true)}`
+          )
+        : new Date(now.getTime() + 60 * 60 * 1000); // Default to 1 hour later
+
+    const timeDifferenceInMilliseconds = returnDateTime - bookingDateTime;
+    const timeDifferenceInMinutes = timeDifferenceInMilliseconds / (1000 * 60);
+    return timeDifferenceInMinutes;
   };
 
   const onSubmit = async (data) => {
@@ -73,7 +98,7 @@ export const useBooking = () => {
     isVehicleCardOpen,
     setIsVehicleCardOpen,
     showSignInPopup,
-    setShowSignInPopup, 
+    setShowSignInPopup,
     fromLocation,
     toLocation,
     distance,
@@ -91,5 +116,6 @@ export const useBooking = () => {
     setReturnDate,
     returnTime,
     setReturnTime,
+    calculateTimeDifference,
   };
 };

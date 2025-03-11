@@ -84,7 +84,7 @@
 
 .passenger-input:focus {
   outline: none;
-  border-color: #F9B443;
+  border-color: #f9b443;
   box-shadow: 0 0 0 3px rgba(249, 180, 67, 0.1);
 }
 
@@ -173,12 +173,12 @@
 }
 
 .payment-method-option:hover:not(.disabled) {
-  border-color: #F9B443;
+  border-color: #f9b443;
   background-color: #fff9f0;
 }
 
 .payment-method-option.selected {
-  border-color: #F9B443;
+  border-color: #f9b443;
   background-color: #fff9f0;
 }
 
@@ -192,7 +192,7 @@
   margin-right: 1rem;
   width: 20px;
   height: 20px;
-  accent-color: #F9B443;
+  accent-color: #f9b443;
 }
 
 .payment-method-label {
@@ -205,7 +205,7 @@
 .icon {
   width: 24px;
   height: 24px;
-  color: #F9B443;
+  color: #f9b443;
 }
 .button {
   width: 100%;
@@ -224,7 +224,7 @@
 }
 
 .button-primary {
-  background-color: #F9B443;
+  background-color: #f9b443;
   color: white;
 }
 
@@ -240,7 +240,7 @@
 
 .button-outline {
   background-color: transparent;
-  border: 2px solid #F9B443;
+  border: 2px solid #f9b443;
   color: #64748b;
 }
 

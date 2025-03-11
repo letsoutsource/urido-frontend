@@ -4,7 +4,7 @@ export const customerReviews = [
     stars: "/fourStars.png",
     review:
       "“Excellent service! The booking process was smooth, and the ride was incredibly comfortable.”",
-    avatar: "/avatar.png",
+    avatar: "/profilePic.png",
     name: "John Doe",
   },
   {
@@ -13,15 +13,15 @@ export const customerReviews = [
     review:
       "“Great experience overall, though I wish the car was a bit cleaner. Still highly recommended!”",
     avatar: "/avatar.png",
-    name: "Jane Smith",
+    name: "David Johnson",
   },
   {
     id: 3,
     stars: "/fourStars.png",
     review:
       "“Decent service, but there was a slight delay in pickup. Hoping for improvements next time.”",
-    avatar: "/avatar.png",
-    name: "David Johnson",
+    avatar: "/profilePic.png",
+    name: "Oliva",
   },
   {
     id: 4,
@@ -29,14 +29,14 @@ export const customerReviews = [
     review:
       "“uRido has been a lifesaver! Reliable and on time every single time. A+ service!”",
     avatar: "/avatar.png",
-    name: "Emma Brown",
+    name: "Sophia",
   },
   {
     id: 5,
     stars: "/fourStars.png",
     review:
       "“Had a pleasant trip. Driver was courteous and drove safely. Will definitely book again.”",
-    avatar: "/avatar.png",
+    avatar: "/profilePic.png",
     name: "Michael Davis",
   },
 ];

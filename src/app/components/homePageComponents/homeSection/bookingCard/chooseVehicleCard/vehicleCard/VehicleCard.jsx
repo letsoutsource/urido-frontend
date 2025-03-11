@@ -4,9 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const VehicleCard = ({ setValue, distance, travelDuration }) => {
+const VehicleCard = ({ setValue, distance, travelDuration, isReturnTrip,calculateTimeDifference }) => {
   const [vehiclesData, setVehiclesData] = useState([]);
-
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
@@ -27,12 +26,19 @@ const VehicleCard = ({ setValue, distance, travelDuration }) => {
   ) => {
     const distanceInMiles = parseFloat(distance);
     const durationInMinutes = parseFloat(travelDuration);
-    const totalFare =
+    let totalFare =
       baseFare +
       distanceInMiles * distanceRate +
       durationInMinutes * timeRate +
       (additionalCharges || 0);
-    return totalFare.toFixed(2);
+      if(isReturnTrip){
+        totalFare *= 2;
+        const timeDifference = calculateTimeDifference()
+        if(timeDifference !==null && timeDifference <= 30){
+          totalFare *= 0.9
+        }
+      }
+      return totalFare.toFixed(2);
   };
 
   const handleGetRide = (

@@ -41,7 +41,8 @@
   color: #000000;
 }
 .helpline-form-subjects {
-  /* margin-left: -14px; */
+  margin-right: 5px !important;
+  margin-left: 16px !important;
 }
 .helpline-form-subject {
   font-size: 14px;

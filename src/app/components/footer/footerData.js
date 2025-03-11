@@ -7,12 +7,12 @@ export const footerLinks = [
 
 export const officeLocations = [
   {
-    title: "Urido Head Office",
+    title: "uRido Head Office",
     address:
       "Unit 2 Northey House, Oxney Road, Peterborough, England, PE1 5YW",
   },
   {
-    title: "Urido Regional Office",
+    title: "uRido Regional Office",
     address:
       "Unit 57 C70, The Winning Box, 27-37 Station Rd, Hayes UB3 4DX, United Kingdom",
   },

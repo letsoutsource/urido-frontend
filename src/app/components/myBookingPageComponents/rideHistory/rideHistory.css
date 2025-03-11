@@ -3,26 +3,15 @@
   background-size: cover;
   background-position: center;
   padding: 100px 0;
-  /* overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none; */
 }
 .ride-history-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 30px;
-  /* overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* .ride-history-container::after {
-  content: "";
-  flex-shrink: 0;
-  width: 30px;
-} */
 .ride-history-heading {
   font-size: 32px;
   font-weight: 600;
@@ -44,7 +33,6 @@
   border: 1px solid #8b7e414d;
   backdrop-filter: blur(24.399999618530273px);
   box-shadow: 0px 12px 29.9px 0px #000000b0;
-  /* width: 544px; */
   width: 47%;
   padding: 30px;
   margin: 20px 0px;

@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link href="/">
             {blackThemeLinks ? (
               <Image
-                src="/uRidoblack.png"
+                src="/uridoblack.png"
                 width={135}
                 height={30}
                 alt="uRido"

@@ -15,11 +15,11 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-description">
           <div className="footer-description-top">
-            <Image src="/uRidowhite.png" width={160} height={60} alt="uRido"/>
+            <Image src="/uridowhite.png" width={135} height={35} alt="uRido"/>
             <p className="footer-description-paragraph">
               Offering reliable and convenient taxi services tailored for your
               travel needs. Whether it’s a quick ride across town or a
-              long-distance journey, Urido ensures safety, comfort, and timely
+              long-distance journey, uRido ensures safety, comfort, and timely
               pickups to make every trip stressfree & enjoyable.
             </p>
           </div>

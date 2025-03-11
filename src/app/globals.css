@@ -8,18 +8,6 @@
 body {
   max-width: 100vw;
 }
-.error-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  height: 100vh;
-  color: #919191;
-  background-color: #f9f9f9;
-}
-.error-container {
-  color: rgb(150, 0, 0);
-}
 
 .loading-container {
   position: fixed;
@@ -56,8 +44,8 @@ body {
 .ring-1 {
   width: 120px;
   height: 120px;
-  border-top: 2px solid #F9B443;
-  border-right: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
+  border-right: 2px solid #f9b443;
   animation: spin3D 2s linear infinite;
 }
 
@@ -66,8 +54,8 @@ body {
   height: 100px;
   top: 10px;
   left: 10px;
-  border-top: 2px solid #F9B443;
-  border-left: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
+  border-left: 2px solid #f9b443;
   animation: spin3D 2s linear infinite reverse;
 }
 
@@ -76,7 +64,7 @@ body {
   height: 80px;
   top: 20px;
   left: 20px;
-  border-top: 2px solid #F9B443;
+  border-top: 2px solid #f9b443;
   animation: spin3D 1.5s linear infinite;
 }
 
@@ -88,8 +76,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: radial-gradient(circle, #ffffff, #F9B443);
-  box-shadow: 0 0 20px #F9B443;
+  background: radial-gradient(circle, #ffffff, #f9b443);
+  box-shadow: 0 0 20px #f9b443;
 }
 
 .loading-text {
@@ -101,7 +89,7 @@ body {
 }
 
 .loading-text span {
-  color: #F9B443;
+  color: #f9b443;
   animation: pulse 1.4s ease-in-out infinite;
   text-shadow: 0 0 10px rgba(249, 180, 67, 0.5);
 }
@@ -157,4 +145,50 @@ body {
     opacity: 1;
     transform: scale(1.1);
   }
+}
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  border-top: 5px solid #f9b443; 
+  height: 70vh;
+}
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
+}
+.error-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+.error-message {
+  color: #555555;
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.error-button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #f9b443;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgb(255, 180, 42);
+}
+.error-button:hover {
+  background-color: #ffb845;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgb(255, 180, 42);
 }

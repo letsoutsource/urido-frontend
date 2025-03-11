@@ -44,10 +44,44 @@ const MyBooking = () => {
     fetchRideData();
   }, [isLoggedIn]);
   if (loading) {
-    return <div className="loading-container">Loading...</div>;
+    return (
+      <div className="loading-container">
+        <div className="loading-wrapper">
+          <div className="cosmic-spinner">
+            <div className="ring ring-1"></div>
+            <div className="ring ring-2"></div>
+            <div className="ring ring-3"></div>
+            <div className="center-circle"></div>
+          </div>
+          <div className="loading-text">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+          </div>
+        </div>
+      </div>
+    );
   }
   if (error) {
-    return <div className="error-container">Error: {error.message}</div>;
+    return (
+      <div className="error-container">
+        <div className="error-icon">🚖</div>
+        <h3 className="error-title">Unable to load bookings</h3>
+        <p className="error-message">
+          {error.response?.data?.message || error.message || "An unexpected error occurred. Please try again."}
+        </p>
+        <button className="error-button" onClick={() => window.location.reload()}>
+          Retry
+        </button>
+      </div>
+    );
   }
   const pendingStatuses = ["Pending", "Process", "Accepted"];
   const completedStatuses = ["Completed", "Rejected", "Canceled"];

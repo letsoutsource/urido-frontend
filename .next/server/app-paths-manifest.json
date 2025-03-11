@@ -5,9 +5,9 @@
   "/about/page": "app/about/page.js",
   "/edit/page": "app/edit/page.js",
   "/faq/page": "app/faq/page.js",
-  "/help/page": "app/help/page.js",
   "/mybooking/page": "app/mybooking/page.js",
   "/page": "app/page.js",
+  "/help/page": "app/help/page.js",
   "/payment/page": "app/payment/page.js",
   "/privacyPolicy/page": "app/privacyPolicy/page.js",
   "/serviceAgreement/page": "app/serviceAgreement/page.js"

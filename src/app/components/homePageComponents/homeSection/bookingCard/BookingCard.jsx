@@ -39,6 +39,7 @@ const BookingCard = () => {
     returnTime,
     setReturnTime,
     setIsVehicleCardOpen,
+    calculateTimeDifference,
   } = useBooking();
   return (
     <form
@@ -66,12 +67,14 @@ const BookingCard = () => {
             selected={bookingDate}
             onChange={(date) => setBookingDate(date)}
             isTime={false}
+            className="booking-date-input" 
           />
           <DateTimePicker
             icon="/clock.png"
             selected={bookingTime}
             onChange={(time) => setBookingTime(time)}
             isTime={true}
+             className="booking-time-input"
           />
         </div>
         {isReturnTrip && (
@@ -81,6 +84,7 @@ const BookingCard = () => {
               selected={returnDate}
               onChange={(date) => setReturnDate(date)}
               isTime={false}
+                className="return-date-input"
             />
             <div className="return-time-wrapper">
               <DateTimePicker
@@ -88,6 +92,7 @@ const BookingCard = () => {
                 selected={returnTime}
                 onChange={(time) => setReturnTime(time)}
                 isTime={true}
+                 className="return-time-input"
               />
             </div>
             <AiOutlineClose
@@ -136,6 +141,8 @@ const BookingCard = () => {
           setValue={setValue}
           distance={distance}
           travelDuration={travelDuration}
+          isReturnTrip={isReturnTrip}
+          calculateTimeDifference={calculateTimeDifference}
         />
       )}
       {showSignInPopup && (

@@ -3,7 +3,14 @@ import CrossSign from "@/assets/crossSign";
 import "./chooseVehicleCard.css";
 import VehicleCard from "./vehicleCard/VehicleCard";
 
-const ChooseVehicleCard = ({ onGetRideClick, setValue, distance, travelDuration }) => {
+const ChooseVehicleCard = ({
+  onGetRideClick,
+  setValue,
+  distance,
+  travelDuration,
+  isReturnTrip,
+  calculateTimeDifference,
+}) => {
   return (
     <div className="vehiclesCard-container">
       <div className="vehiclesCard-header">
@@ -13,7 +20,13 @@ const ChooseVehicleCard = ({ onGetRideClick, setValue, distance, travelDuration 
         </button>
       </div>
       <div className="vehiclesCard-content">
-        <VehicleCard setValue={setValue} distance={distance} travelDuration={travelDuration} />
+        <VehicleCard
+          setValue={setValue}
+          distance={distance}
+          travelDuration={travelDuration}
+          isReturnTrip={isReturnTrip}
+          calculateTimeDifference={calculateTimeDifference}
+        />
       </div>
     </div>
   );

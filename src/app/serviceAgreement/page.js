@@ -8,18 +8,17 @@ const ServiceAgreement = () => {
       <div className="section">
         <h2>1. GENERAL</h2>
         <p>
-          1.1. Urido LTD, the company registered at 57 Spyrou Kyprianou,
-          Bybloserve Business Center, 2nd floor, 6051, Larnaca, Cyprus
-          (hereinafter referred to as the "Company") hereby offers to use the
-          Service available at https://gettransfer.com and at all third-level
-          subdomains (hereinafter referred to as the "Site") and further
-          described in section 2 hereof (hereinafter referred to as the
-          "Service") to an Internet user (hereinafter referred to as the "User")
-          under the terms and conditions described herein. This Agreement
-          (hereinafter referred to as the "Agreement") shall come into force and
-          become legally binding for the Company and the User (hereinafter
-          referred to as the "Parties") at the moment when the User first starts
-          to use the Service.
+          1.1. Urido LTD, the company registered at Unit # 2 Northey House,
+          Oxney Road, Peterborough, England, PE15YW (hereinafter referred to as
+          the "Company") hereby offers to use the Service available at
+          https://gettransfer.com and at all third-level subdomains (hereinafter
+          referred to as the "Site") and further described in section 2 hereof
+          (hereinafter referred to as the "Service") to an Internet user
+          (hereinafter referred to as the "User") under the terms and conditions
+          described herein. This Agreement (hereinafter referred to as the
+          "Agreement") shall come into force and become legally binding for the
+          Company and the User (hereinafter referred to as the "Parties") at the
+          moment when the User first starts to use the Service.
         </p>
         <p>
           1.2. When starting to use the Service, the User shall be deemed to

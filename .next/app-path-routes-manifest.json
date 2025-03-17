@@ -1,14 +1,14 @@
 {
-  "/frontend-api/sendBookingEmail/route": "/frontend-api/sendBookingEmail",
   "/frontend-api/sendEmail/route": "/frontend-api/sendEmail",
+  "/frontend-api/sendBookingEmail/route": "/frontend-api/sendBookingEmail",
   "/_not-found/page": "/_not-found",
-  "/edit/page": "/edit",
   "/about/page": "/about",
+  "/edit/page": "/edit",
   "/faq/page": "/faq",
   "/help/page": "/help",
   "/page": "/",
-  "/mybooking/page": "/mybooking",
   "/payment/page": "/payment",
-  "/privacyPolicy/page": "/privacyPolicy",
-  "/serviceAgreement/page": "/serviceAgreement"
+  "/mybooking/page": "/mybooking",
+  "/serviceAgreement/page": "/serviceAgreement",
+  "/privacyPolicy/page": "/privacyPolicy"
 }

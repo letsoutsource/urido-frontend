@@ -1,7 +1,7 @@
 export const contactDetails = [
   {
     icon: "/call.png",
-    details: "01733 595092",
+    details: ["01733 595092", "01733 201000"],
   },
   {
     icon: "/location.png",

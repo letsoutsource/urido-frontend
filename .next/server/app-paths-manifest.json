@@ -1,14 +1,14 @@
 {
-  "/frontend-api/sendBookingEmail/route": "app/frontend-api/sendBookingEmail/route.js",
   "/frontend-api/sendEmail/route": "app/frontend-api/sendEmail/route.js",
+  "/frontend-api/sendBookingEmail/route": "app/frontend-api/sendBookingEmail/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/edit/page": "app/edit/page.js",
   "/about/page": "app/about/page.js",
+  "/edit/page": "app/edit/page.js",
   "/faq/page": "app/faq/page.js",
   "/help/page": "app/help/page.js",
   "/page": "app/page.js",
-  "/mybooking/page": "app/mybooking/page.js",
   "/payment/page": "app/payment/page.js",
-  "/privacyPolicy/page": "app/privacyPolicy/page.js",
-  "/serviceAgreement/page": "app/serviceAgreement/page.js"
+  "/mybooking/page": "app/mybooking/page.js",
+  "/serviceAgreement/page": "app/serviceAgreement/page.js",
+  "/privacyPolicy/page": "app/privacyPolicy/page.js"
 }

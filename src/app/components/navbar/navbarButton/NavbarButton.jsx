@@ -5,24 +5,26 @@ import ProfilePopUp from "./profilePopUp/ProfilePopUp";
 import "./navbarButton.css";
 import { hide, toggle } from "../../../../store/slices/credentialsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 const NavbarButton = () => {
   const path = usePathname();
   const dispatch = useDispatch();
   const { isLoggedIn } = useSelector((state) => state.auth);
+  const router = useRouter()
   const { user } = useSelector((state) => state.auth);
   const { showCredentials } = useSelector((state) => state.credentials);
-  const buttonText = isLoggedIn ? user.userName : "Sign In";
+  // const buttonText = isLoggedIn ? user.userName : "Sign In";
   const buttonClass = isLoggedIn
     ? "myProfile-navbar-button"
     : "signIn-navbar-button";
   const PopupComponent = isLoggedIn ? ProfilePopUp : Credentials;
   const orangeButtonBg =
-    path === "/mybooking" || path === "/help" || path === "/edit" || path === "/payment";
+    path === "/mybooking" || path === "/help" || path === "/edit" || path === "/payment" || path === '/booking';
 
   const handleButtonClick = () => {
-    dispatch(toggle());
+    router.push('/booking')
+    // dispatch(toggle());
   };
   useEffect(() => {
     dispatch(hide());
@@ -36,8 +38,9 @@ const NavbarButton = () => {
           backgroundColor: orangeButtonBg && isLoggedIn ? "#f9b443" : "",
         }}
       >
-        <FaUserAlt />
-        {buttonText}
+        {/* <FaUserAlt /> */}
+        Book Now
+        {/* {buttonText} */}
       </button>
       {showCredentials && (
         <div className="credentials-popup">

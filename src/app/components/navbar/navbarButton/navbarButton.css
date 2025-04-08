@@ -14,14 +14,14 @@
 
 .signIn-navbar-button {
   gap: 5px;
-  background-color: #f9b443;
+  background-color: #f8a31a;
   padding: 15px 30px;
   border: none;
   outline: none;
 }
 .signIn-navbar-button:hover {
   cursor: pointer;
-  background-color: #f8a31a;
+  background-color: #f9b443;
 }
 .myProfile-navbar-button {
   gap: 10px;

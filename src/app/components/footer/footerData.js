@@ -11,9 +11,9 @@ export const officeLocations = [
     address:
       "Unit 2 Northey House, Oxney Road, Peterborough, England, PE1 5YW",
   },
-  {
-    title: "uRido Regional Office",
-    address:
-      "Unit 57 C70, The Winning Box, 27-37 Station Rd, Hayes UB3 4DX, United Kingdom",
-  },
+  // {
+  //   title: "uRido Regional Office",
+  //   address:
+  //     "Unit 57 C70, The Winning Box, 27-37 Station Rd, Hayes UB3 4DX, United Kingdom",
+  // },
 ];

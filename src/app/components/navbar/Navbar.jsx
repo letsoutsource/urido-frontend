@@ -18,6 +18,8 @@ const Navbar = () => {
     "/privacyPolicy",
     "/faq",
     "/serviceAgreement",
+    "/booking",
+    "/coverageArea",
   ].includes(path);
 
   const toggleMenu = () => {
@@ -76,12 +78,7 @@ const Navbar = () => {
         {menuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-header">
-              <Image
-                src="/uridoblack.png"
-                width={92}
-                height={25}
-                alt="uRido"
-              />
+              <Image src="/uridoblack.png" width={92} height={25} alt="uRido" />
               <Image
                 src="/cross.png"
                 alt="cross"

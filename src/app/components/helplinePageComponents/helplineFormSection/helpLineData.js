@@ -9,10 +9,11 @@ export const contactDetails = [
       "Unit 2 Northey House, Oxney Road,Peterborough,England, PE1 5YW",
   },
   {
-    icon: "/location.png",
+    icon: "/clock.png",
     details:
-      "Unit 57 C70, The Winning Box, 27-37 Station Rd, Hayes UB3 4DX, United Kingdom",
-  },
+      "Customer Support Centre, Open 24/7, Call or Email for Assistance Anytime",
+  }
+  
 ];
 
 export const inputs = [

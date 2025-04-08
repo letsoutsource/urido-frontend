@@ -27,20 +27,12 @@ const Footer = () => {
             <h3 className="footer-followUs-heading">Follow Us</h3>
             <div className="footer-social-icons">
               <FacebookLogo />
-              <InstagramLogo />
+              {/* <InstagramLogo /> */}
               <LinkedinIcon />
             </div>
           </div>
         </div>
-        <div className="footer-location">
-          <h5 className="footer-location-heading">Office</h5>
-          {officeLocations.map((location, index) => (
-            <div key={index} className="footer-location-address">
-              <h2 className="footer-location-headOffice">{location.title}</h2>
-              <p className="footer-location-address-line">{location.address}</p>
-            </div>
-          ))}
-        </div>
+     
 
         <div className="footer-links">
           <h5 className="footer-links-heading">Links</h5>
@@ -56,6 +48,16 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="footer-location">
+          <h5 className="footer-location-heading">Office</h5>
+          {officeLocations.map((location, index) => (
+            <div key={index} className="footer-location-address">
+              <h2 className="footer-location-headOffice">{location.title}</h2>
+              <p className="footer-location-address-line">{location.address}</p>
+            </div>
+          ))}
         </div>
       </div>
       <Image

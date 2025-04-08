@@ -35,6 +35,10 @@
   align-items: center;
   gap: 10px;
 }
+.customer-review-author-icon{
+  border-radius: 50%;
+  object-fit: cover;
+}
 .customer-review-author-name {
   font-size: 16px;
   font-weight: 400;
@@ -43,6 +47,7 @@
   text-align: center;
   color: #ffffff;
 }
+
 @media (max-width: 768px) {
   .customer-reviews-cards {
     padding: 0px;

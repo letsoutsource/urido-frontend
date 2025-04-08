@@ -1,6 +1,6 @@
 export const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/mybooking", label: "My Booking" },
+  { href: "/coverageArea", label: "Coverage Area" },
   { href: "/help", label: "Help Line" },
   { href: "/about", label: "About Us" },
 ];

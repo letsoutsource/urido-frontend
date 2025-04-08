@@ -45,6 +45,18 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
+      "page": "/booking",
+      "regex": "^/booking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/booking(?:/)?$"
+    },
+    {
+      "page": "/coverageArea",
+      "regex": "^/coverageArea(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/coverageArea(?:/)?$"
+    },
+    {
       "page": "/edit",
       "regex": "^/edit(?:/)?$",
       "routeKeys": {},

@@ -1,18 +1,126 @@
-.homebackground-image {
+.homepage-container {
   width: 100%;
-  object-fit: fill;
-  z-index: -1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  color: #333;
 }
+
+.homepage-hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.homebackground-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
+.homepage-hero-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.homepage-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.homepage-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #f8a31a;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
-  .homebackground-image{
-    height: 85vh;
+  .homepage-hero-section {
+    height: 55vh;
+  }
+  .homebackground-image {
+    height: 60%;
+  }
+  .homepage-hero-content h1 {
+    font-size: 35px;
+  }
+  .homepage-hero-content p {
+    font-size: 17px;
+  }
+  .homepage-hero-buttons {
+    gap: 17px;
   }
 }
-@media (max-width:360px) {
-  .homebackground-image{
-    height: 75vh;
+@media (max-width: 360px) {
+  .homepage-hero-section {
+    height: 55vh;
+  }
+  .homebackground-image {
+    height: 65%;
+  }
+  .homepage-hero-content h1 {
+    font-size: 28px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    font-size: 14px;
+  }
+  .homepage-hero-buttons {
+    gap: 12px;
+  }
+  .homepage-hero-content p {
+    font-size: 14px;
   }
 }

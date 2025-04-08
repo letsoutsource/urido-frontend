@@ -13,6 +13,7 @@ const HelplineForm = () => {
   const [selectedSubject, setSelectedSubject] = useState(subjects[0]?.value);
   const [isSubmitting, setIsSubmitting] = useState(false); 
   const onSubmit = async (data) => {
+    console.log("🚀 ~ onSubmit ~ data:", data)
     setIsSubmitting(true);
     try {
       const response = await axios.post("/frontend-api/sendEmail", data, {
@@ -20,12 +21,12 @@ const HelplineForm = () => {
           "Content-Type": "application/json",
         },
       });
-
-      if (response.status === 200) {
+      console.log("🚀 ~ onSubmit ~ response:", response)
+      // if (response.status === 200) {
         toast.success("Email sent successfully");
-      } else {
-        toast.error("Failed to send email");
-      }
+      // } else {
+        // toast.error("Failed to send email");
+      // }
     } catch (error) {
       console.error("Error sending email:", error);
       toast.error("Failed to send email");

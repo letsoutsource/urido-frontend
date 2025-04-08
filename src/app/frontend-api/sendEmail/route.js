@@ -2,13 +2,19 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   const { Name, email, subject, message } = await req.json();
+  if (!Name || !email || !subject || !message) {
+    return new Response(JSON.stringify({ error: "Missing required fields" }), {
+      status: 400,
+    });
+  }
   let transporter = nodemailer.createTransport({
     host: "premium145.web-hosting.com",
     port: 465,
     secure: true,
     auth: {
       user: "info@urido.co.uk",
-      pass: "RO8maT9C2uZx",
+      pass: "f]M6Ef{QEfzj",
+      // pass: "RO8maT9C2uZx",
     },
   });
 
@@ -32,7 +38,7 @@ export async function POST(req) {
     from: `"${Name}" <info@urido.co.uk>`,
     to: "support@urido.co.uk",
     subject: subject,
-    html: htmlContent, 
+    html: htmlContent,
     replyTo: email,
   };
 
@@ -43,6 +49,7 @@ export async function POST(req) {
       { status: 200 }
     );
   } catch (error) {
+    console.error("Error sending email:", error);
     return new Response(JSON.stringify({ error: "Failed to send email" }), {
       status: 500,
     });

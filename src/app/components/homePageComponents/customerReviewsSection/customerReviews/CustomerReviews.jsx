@@ -12,7 +12,7 @@ const CustomerReviews = ({ cardsContainerRef }) => {
           <p className="customer-review-card-para">{review.review}</p>
           <div className="customer-review-card-bottom">
             <div className="customer-review-author-detail">
-              <Image src={review.avatar} alt="avatar" height={40} width={40} />
+              <Image src={review.avatar} alt="avatar" height={40} width={40} className="customer-review-author-icon" />
               <h3 className="customer-review-author-name">{review.name}</h3>
             </div>
             <Image

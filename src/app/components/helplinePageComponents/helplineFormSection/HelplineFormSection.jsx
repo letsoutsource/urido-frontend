@@ -16,7 +16,7 @@ const HelplineFormSection = () => {
         </p>
       </div>
       <div className="helpline-form-section">
-        <HelplineInformationCard className="helpline-information-card"/>
+        <HelplineInformationCard className="helpline-information-card" />
         <HelplineForm />
       </div>
     </div>

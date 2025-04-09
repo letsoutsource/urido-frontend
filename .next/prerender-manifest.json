@@ -97,6 +97,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/about": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about",
+      "dataRoute": "/about.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -145,30 +169,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/about": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/about",
-      "dataRoute": "/about.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/serviceAgreement": {
       "experimentalBypassFor": [
         {
@@ -197,8 +197,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "439baa0f2d755fb8a0597d923ef100e7",
-    "previewModeSigningKey": "3203140b02f6ab9111901862956d2e6795b2718c2ae3ee30d8e3f874edb29fd1",
-    "previewModeEncryptionKey": "b72fc82b126ac6c6f1f732062e192f3040821f4a03f91767cc345bbdd123b20e"
+    "previewModeId": "c50bd3eeb2ece024b94b121c017526b9",
+    "previewModeSigningKey": "8d3714f7c019f705f2d3ad32d90eef29ef007e825f75f600df5b1a3eb558a00f",
+    "previewModeEncryptionKey": "59e922ed67ea8e5c7132b0f69e1fa580b266ee01d1a39ffd3e92dbaeddb486e5"
   }
 }

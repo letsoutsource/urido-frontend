@@ -4,9 +4,9 @@
   "/about/page": "/about",
   "/booking/page": "/booking",
   "/coverageArea/page": "/coverageArea",
-  "/faq/page": "/faq",
   "/help/page": "/help",
   "/page": "/",
+  "/faq/page": "/faq",
   "/privacyPolicy/page": "/privacyPolicy",
   "/serviceAgreement/page": "/serviceAgreement"
 }

@@ -40,12 +40,34 @@
 .navbar-button-container {
   position: relative;
 }
+.booknow-button {
+  width: fit-content;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 6px;
+  color: #ffffff;
+  justify-content: space-around;
+  background-color: #f8a31a;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.booknow-button:hover {
+  cursor: pointer;
+  background-color: #f9b443;
+}
 
 @media (max-width: 768px) {
   .navbar-container {
     padding: 20px;
   }
-  .navbar-logo-div{
+  .navbar-logo-div {
     display: flex;
     gap: 20px;
   }
@@ -57,7 +79,7 @@
     cursor: pointer;
     position: relative;
   }
-  .navbar-urido-logo{
+  .navbar-urido-logo {
     width: 116px;
     height: 29px;
     margin-top: -5px;
@@ -74,33 +96,39 @@
     width: 250px;
     height: 760px;
   }
-  
-  .mobile-menu-header{
+
+  .mobile-menu-header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #C8C8C8B2;
+    border-bottom: 1px solid #c8c8c8b2;
     align-items: center;
     padding: 20px;
   }
-  .mobile-menu-links{
+  .mobile-menu-links {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 27px;
-color: #000000;
-}
-.active-link {
-  color: #f8a31a;
-}
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 27px;
+      color: #000000;
+    }
+    .active-link {
+      color: #f8a31a;
+    }
+  }
+  .booknow-button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
   }
 }
 @media (max-width: 360px) {
-  .navbar-urido-logo{
+  .navbar-urido-logo {
     width: 110px;
     height: 24px;
     margin-top: -3px;

@@ -89,7 +89,7 @@ const CoverageAreaPage = () => {
           </p>
 
           <div className="coverage-area-regions-container">
-            <h3 className="coverage-area-regions-heading">Regions We Cover</h3>
+            <h3 className="coverage-area-regions-heading">Regions And Local Areas We Cover</h3>
             <div className="coverage-area-regions-wrapper">
               {regions.map((region, index) => (
                 <span key={index} className="coverage-area-region-tag">

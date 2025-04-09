@@ -120,6 +120,9 @@
   border: 1px solid #e5e7eb;
   background-color: white;
   transition: box-shadow 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .airport-card:hover {

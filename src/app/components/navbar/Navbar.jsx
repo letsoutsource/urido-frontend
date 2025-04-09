@@ -3,7 +3,6 @@ import "./navbar.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "./navLinks";
-import NavbarButton from "./navbarButton/NavbarButton";
 import Image from "next/image";
 import { useState } from "react";
 const Navbar = () => {
@@ -104,7 +103,9 @@ const Navbar = () => {
         )}
 
         <div className="navbar-button-container">
-          <NavbarButton />
+          <Link href="/booking" className='booknow-button'>
+            Book Now
+          </Link>
         </div>
       </nav>
     </div>

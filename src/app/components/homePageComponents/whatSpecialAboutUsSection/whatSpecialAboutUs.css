@@ -13,19 +13,18 @@
   padding-bottom: 50px;
 }
 @media (max-width: 768px) {
-  .specialaboutus-container{
-    padding: 60px 20px;
+  .specialaboutus-container {
+    padding: 30px 20px 60px 20px;
   }
   .specialaboutus-heading {
     font-size: 30px;
-   }
+  }
 }
 @media (max-width: 360px) {
-  .specialaboutus-container{
-    padding: 60px 20px;
+  .specialaboutus-container {
+    padding: 30px 20px 60px 20px;
   }
   .specialaboutus-heading {
     font-size: 28px;
-   }
+  }
 }
-

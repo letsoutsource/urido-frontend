@@ -2,7 +2,6 @@
 import Image from "next/image";
 import "./footer.css";
 import FacebookLogo from "@/assets/Svg/fb";
-import InstagramLogo from "@/assets/Svg/insta";
 import LinkedinIcon from "@/assets/Svg/linkedin";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

@@ -15,7 +15,7 @@ export const airports = [
     name: "Heathrow Airport",
     code: "LHR",
     cities: ["London"],
-    isPopular: false,
+    isPopular: true,
   },
   {
     name: "Manchester Airport",
@@ -24,11 +24,12 @@ export const airports = [
     isPopular: false,
   },
   {
-    name: "Birmingham Airport",
-    code: "BHX",
-    cities: ["Birmingham"],
-    isPopular: false,
+    name: "London Luton Airport",
+    code: "LTN",
+    cities: ["London"],
+    isPopular: true,
   },
+  
   {
     name: "Edinburgh Airport",
     code: "EDI",
@@ -47,11 +48,12 @@ export const airports = [
     cities: ["Liverpool"],
     isPopular: false,
   },
+ 
   {
-    name: "Newcastle Airport",
-    code: "NCL",
-    cities: ["Newcastle"],
-    isPopular: false,
+    name: "London Gatwick Airport",
+    code: "LGW",
+    cities: ["London"],
+    isPopular: true,
   },
   {
     name: "London City Airport",
@@ -71,7 +73,38 @@ export const airports = [
     cities: ["Leeds"],
     isPopular: false,
   },
+  {
+    name: "Newcastle Airport",
+    code: "NCL",
+    cities: ["Newcastle"],
+    isPopular: false,
+  },
+  {
+    name: "Birmingham Airport",
+    code: "BHX",
+    cities: ["Birmingham"],
+    isPopular: false,
+  },
+  {
+    name: "East Midlands Airport",
+    code: "EMA",
+    cities: ["Nottingham", "Leicester", "Derby"],
+    isPopular: true,
+  },
+  {
+    name: "Aberdeen Airport",
+    code: "ABZ",
+    cities: ["Aberdeen"],
+    isPopular: false,
+  },
+  {
+    name: "Cardiff Airport",
+    code: "CWL",
+    cities: ["Cardiff"],
+    isPopular: false,
+  },
 ];
+
 
 export const regions = [
   "Peterborough Airport",
@@ -81,7 +114,6 @@ export const regions = [
   "Birmingham",
   "Liverpool",
   "Edinburgh",
-  "Glasgow",
   "Bristol",
   "Leeds",
   "Sheffield",
@@ -89,4 +121,26 @@ export const regions = [
   "Cardiff",
   "Oxford",
   "Cambridge",
+  "Leicester",
+  "Northampton",
+  "Lincoln",
+  "Norwich",
+  "Nottingham",
+  "Bedford",
+  "Milton Keynes",
+  "Stamford",
+  "Huntingdon",
+  "Spalding",
+  "Wisbech",
+  "Grantham",
+  "Kettering",
+  "Oakham",
+  "Bourne",
+  "Sleaford",
+  "Newark-on-Trent",
+  "Holbeach",
+  "March",
+  "Downham Market",
+  "King’s Lynn",
+  "Thetford"
 ];

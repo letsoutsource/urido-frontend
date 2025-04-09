@@ -1,8 +1,8 @@
 import "./globals.css";
-import ClientProvider from "./ClientProvider";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import WhatsAppButton from "./components/whatsappButton/WhatsAppButton";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Urido | Let's Ride - Your Taxi In Pocket",
@@ -25,12 +25,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ClientProvider>
-          <Navbar />
-          <WhatsAppButton />
-          {children}
-          <Footer />
-        </ClientProvider>
+        <Navbar />
+        <WhatsAppButton />
+        {children}
+        <ToastContainer position="bottom-left" />
+        <Footer />
       </body>
     </html>
   );

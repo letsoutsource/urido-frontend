@@ -57,22 +57,10 @@
       "namedRegex": "^/coverageArea(?:/)?$"
     },
     {
-      "page": "/edit",
-      "regex": "^/edit(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/edit(?:/)?$"
-    },
-    {
       "page": "/faq",
       "regex": "^/faq(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/faq(?:/)?$"
-    },
-    {
-      "page": "/frontend-api/sendBookingEmail",
-      "regex": "^/frontend\\-api/sendBookingEmail(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/frontend\\-api/sendBookingEmail(?:/)?$"
     },
     {
       "page": "/frontend-api/sendEmail",
@@ -85,18 +73,6 @@
       "regex": "^/help(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/help(?:/)?$"
-    },
-    {
-      "page": "/mybooking",
-      "regex": "^/mybooking(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/mybooking(?:/)?$"
-    },
-    {
-      "page": "/payment",
-      "regex": "^/payment(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/payment(?:/)?$"
     },
     {
       "page": "/privacyPolicy",

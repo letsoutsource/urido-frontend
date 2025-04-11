@@ -1,12 +1,12 @@
 {
-  "/frontend-api/sendEmail/route": "app/frontend-api/sendEmail/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/booking/page": "app/booking/page.js",
+  "/frontend-api/sendEmail/route": "app/frontend-api/sendEmail/route.js",
   "/about/page": "app/about/page.js",
+  "/booking/page": "app/booking/page.js",
   "/coverageArea/page": "app/coverageArea/page.js",
   "/faq/page": "app/faq/page.js",
-  "/help/page": "app/help/page.js",
   "/page": "app/page.js",
   "/privacyPolicy/page": "app/privacyPolicy/page.js",
+  "/help/page": "app/help/page.js",
   "/serviceAgreement/page": "app/serviceAgreement/page.js"
 }

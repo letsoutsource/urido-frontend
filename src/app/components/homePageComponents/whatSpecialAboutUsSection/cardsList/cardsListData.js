@@ -10,8 +10,8 @@ export const specialAboutUsCards = [
     },
     MobileIcon: {
       src: "/walletIcon.png",
-      width: 110,
-      height: 110,
+      width: 95,
+      height: 90,
     },
   },
   {
@@ -25,8 +25,8 @@ export const specialAboutUsCards = [
     },
     MobileIcon: {
       src: "/dollarIcon.png",
-      width: 120,
-      height: 120,
+      width: 95,
+      height: 90,
     },
   },
   {
@@ -40,8 +40,8 @@ export const specialAboutUsCards = [
       },
     MobileIcon: {
       src: "/percentIcon.png", 
-      width: 120, 
-      height: 120, 
+      width: 90, 
+      height: 90, 
       },
   },
 ];

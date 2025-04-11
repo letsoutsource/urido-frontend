@@ -41,10 +41,10 @@
   max-width: 256px;
   color: #897e6c;
 }
-.specialaboutus-card-largeScreenIcon{
+.specialaboutus-card-largeScreenIcon {
   display: block;
 }
-.specialaboutus-card-mobileIcon{
+.specialaboutus-card-mobileIcon {
   display: none;
 }
 @media (max-width: 768px) {
@@ -52,11 +52,8 @@
     gap: 20px;
     flex-wrap: wrap;
   }
+  .specialaboutus-mobileView-card,
   .specialaboutus-card {
-    width: 42vw;
-    padding: 20px;
-  }
-  .specialaboutus-mobileView-card {
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #fff9f0 0%, #fff9f0 100%),
@@ -71,37 +68,58 @@
     justify-content: normal;
     align-items: center;
     gap: 10px;
-    width: 46%;
-    padding: 20px;
+    width: 42vw;
+    padding: 7px 12px;
   }
   .specialaboutus-card-head {
-    font-size: 17px;
+    font-size: 16px;
   }
   .specialaboutus-card-para {
     font-size: 14px;
+    line-height: 20px;
   }
   .bottomcard-icons {
     display: none;
   }
-  .specialaboutus-card-mobileIcon{
+  .specialaboutus-card-mobileIcon {
     display: block;
   }
-  .specialaboutus-card-largeScreenIcon{
+  .specialaboutus-card-largeScreenIcon {
     display: none;
   }
-  .specialaboutus-car{
-    margin-top: 20px;
+  .specialaboutus-car-image {
+    margin-top: 14px;
   }
 }
 
 @media (max-width: 360px) {
+  .specialaboutus-mobileView-card,
   .specialaboutus-card {
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fff9f0 0%, #fff9f0 100%),
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 52%,
+        rgba(255, 255, 255, 0.565148) 85.91%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+    border: 1.3px solid #fff1db;
+    border-radius: 15.64px;
+    justify-content: normal;
+    align-items: center;
+    gap: 5px;
+    width: 41vw;
+    padding: 7px 5px;
   }
-  .specialaboutus-card-para{
-    font-size: 11px;
+  .specialaboutus-card-para {
+    font-size: 12px;
+    line-height: 19px;
   }
   .specialaboutus-card-head {
     font-size: 13px;
+  }
+  .specialaboutus-car-image {
+    margin-top: 14px;
+  }
 }
- }

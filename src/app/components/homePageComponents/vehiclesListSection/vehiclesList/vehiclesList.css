@@ -35,7 +35,15 @@
   padding: 0px 20px 20px 20px;
 }
 @media (max-width: 768px) {
-  .vehicleListSection-vehicles{
+  .vehicleListSection-vehicles {
     padding: 0px;
+  }
+  .vehicleListSection-vehicle-image {
+    width: 220px;
+  }
+}
+@media (max-width: 360px) {
+  .vehicleListSection-vehicle-image {
+    width: 210px;
   }
 }

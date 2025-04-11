@@ -31,13 +31,13 @@ const CardList = () => {
         </div>
       ))}
       <div className="specialaboutus-mobileView-card">
-        <h4 className="specialaboutus-card-head" style={{ marginTop: "5px" }}>
+        <h4 className="specialaboutus-card-head">
           Nation Wide
         </h4>
         <p className="specialaboutus-card-para">
           Your trusted ride, no matter where you are. It's nationwide.
         </p>
-         <Image src="/car.png" alt="car" width={100} height={90} className="specialaboutus-car"/>
+         <Image src="/car.png" alt="car" width={85} height={70} className="specialaboutus-car-image"/>
       </div>
     </div>
   );

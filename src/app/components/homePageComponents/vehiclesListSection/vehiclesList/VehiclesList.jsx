@@ -12,6 +12,7 @@ const VehiclesList = async () => {
             width={265}
             height={160}
             alt={vehicle.vehicleName}
+            className="vehicleListSection-vehicle-image"
           />
           <h4 className="vehicleListSection-vehicle-name">
             {vehicle.vehicleName}

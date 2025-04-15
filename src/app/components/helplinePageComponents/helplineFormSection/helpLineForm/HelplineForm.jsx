@@ -48,7 +48,7 @@ const HelplineForm = () => {
           <div className="form-input-wrapper" key={index}>
             <Image
               src={input.icon}
-              alt={`${input.name} icon`}
+              alt={input.name === "email" ? "Email taxi support" : "Name for cab booking"}
               height={20}
               width={20}
             />
@@ -99,7 +99,7 @@ const HelplineForm = () => {
         />
       </div>
       <div className="form-message-input">
-        <Image src="/mail.png" alt="message icon" height={20} width={20} />
+        <Image src="/mail.png"  alt="Message about Luton Airport taxi or Peterborough cab"  height={20} width={20} />
         <span className="input-divider">|</span>
         <input
           {...register("message", {
@@ -120,8 +120,7 @@ const HelplineForm = () => {
         className="helpline-form-button"
         disabled={isSubmitting}
         >
-        {isSubmitting ? "Submitting..." : "Submit"} 
-        </button>
+        {isSubmitting ? "Submitting..." : "Get Help"}</button>
     </form>
   );
 };

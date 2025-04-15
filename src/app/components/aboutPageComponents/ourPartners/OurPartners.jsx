@@ -6,52 +6,53 @@ const OurPartners = () => {
     <div className="our-partners-container">
       <h2 className="our-partners-heading">Our Trusted Partners</h2>
       <p className="our-partners-para">
-        We are proud to collaborate with industry-leading partners who share our
-        commitment to excellence, reliability, & innovation. Their support helps
-        us deliver exceptional service to our customers every day.
-      </p>
+  We partner with premium transport providers to enhance our 24/7 taxi services, 
+  ensuring reliable airport transfers and comfortable minicab solutions. Together 
+  we deliver exceptional private hire experiences with professional drivers.
+</p>
       <div className="our-partners-logos">
         <Image
-          src="/Booking.png"
-          alt="Booking Partner Logo"
+          src="/Booking.webp"
+          alt="Heathrow Booking Partner Cheap Taxi"
           width={222}
           height={76}
           className="booking-logo"
         />
-        <Image
-          src="/albatross.png"
-          alt="Albatross Logo"
-          width={206}
-          height={85}
-          className="albatross-logo"
+         <Image
+          src="/cmac.webp"
+          alt="Peterboroguh Cheap Affordable CMAC Group Taxi"
+          width={208}
+          height={120}
+          className="cmac-logo"
         />
+       
         <Image
-          src="/Saltire.png"
-          alt="Saltire Logo"
-          width={191}
+          src="/groundscope.webp"
+          alt="Luton to london Groundscope Taxi"
+          width={161}
           height={52}
-          className="saltire-logo"
+          className="groundscope-logo"
         />
         <Image
-          src="/DaddyCabs.png"
-          alt="DaddyCabs Logo"
+          src="/DaddyCabs.webp"
+          alt="Best Lutton DaddyCabs Taxi Service"
           width={134}
           height={120}
           className="daddy-cab-logo"
         />
         <Image
-          src="/Letsoutsource.png"
-          alt="LetsOutsource Logo"
+          src="/Letsoutsource.webp"
+          alt="Urgent LetsOutsource Taxi"
           width={214}
           height={100}
           className="lets-outsource-logo"
         />
         <Image
-          src="/Jstelecom.png"
-          alt="Jstelecom Logo"
-          width={208}
-          height={55}
-          className="jstelecom-logo"
+          src="/albatross.webp"
+          alt="Heathrow Luton airport Albatross airport transfers"
+          width={200}
+          height={85}
+          className="albatross-logo"
         />
       </div>
     </div>

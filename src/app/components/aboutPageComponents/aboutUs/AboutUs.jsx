@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="aboutUs-container">
       <Image
-        src="/aboutUsBackground.jpg"
+        src="/aboutUsBackground.webp"
         height={781}
         width={1441}
         alt="aboutUs"
@@ -22,18 +22,18 @@ const AboutUs = () => {
         <div className="aboutUs-card-div1">
           <span className="decorater-letter">A</span>
           <p className="aboutUs-card-para1">
-            t Urido,we’re more than just a taxi booking service we’re your partner
+            t Urido,we’re more than just a taxi cab runner we’re your partner
             <span>
-              , committed to making every journey smooth, safe,and stress-free.
+              , committed to making every journey smooth, safe,and cheap.
             </span>
             <br />
           </p>
         </div>
 
         <p className="aboutUs-card-para2">
-          With a user-friendly platform and a fleet of trusted drivers, we bring
-          convenience and reliability right to your fingertips.Whether  a
-          quick ride across town or a long-distance trip, our focus is on
+          With a user-friendly platform and a fleet of cab drivers, we bring
+          convenience, urgent taxi to your fingertips.Whether  a
+          urgent ride across town or a airport transfers, our focus is on
           delivering exceptional service that meets your needs and exceeds your
           expectations.
           <br />

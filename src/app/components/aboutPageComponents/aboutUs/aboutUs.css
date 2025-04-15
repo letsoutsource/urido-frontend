@@ -58,7 +58,6 @@
 }
 .aboutUs-card-div1 {
   display: flex;
-  /* align-items: center; */
 }
 .decorater-letter {
   font-size: 51px;
@@ -113,7 +112,6 @@
   .aboutUs-card-para1 {
     font-size: 14px;
     align-items: baseline;
-    /* margin-left: 5px; */
     br{
       display: none;
     }

@@ -37,7 +37,7 @@ const CardList = () => {
         <p className="specialaboutus-card-para">
           Your trusted ride, no matter where you are. It's nationwide.
         </p>
-         <Image src="/car.png" alt="car" width={85} height={70} className="specialaboutus-car-image"/>
+         <Image src="/car.webp" alt="car" width={85} height={70} className="specialaboutus-car-image"/>
       </div>
     </div>
   );

@@ -1,57 +1,57 @@
 export const customerReviews = [
   {
     id: 1,
-    stars: "/fourStars.png",
+    stars: "/fiveStars.png",
     review:
-      "“Excellent service! The booking process was smooth, and the ride was incredibly comfortable.”",
-    avatar: "/avatar6.png",
+      "“The best Peterborough taxi service I've used! My Luton Airport transfer was seamless and affordable.”",
+    avatar: "/avatar6.webp",
     name: "James Thompson",
   },
   {
     id: 2,
     stars: "/fiveStars.png",
     review:
-      "“Great experience overall, though I wish the car was a bit cleaner. Still highly recommended!”",
-    avatar: "/avatar7.png",
+      "“Perfect minicab from Heathrow to Luton. Professional driver and clean vehicle - will book again!”",
+    avatar: "/avatar7.webp",
     name: "Harry Wilson",
   },
   {
     id: 3,
     stars: "/fourStars.png",
     review:
-      "“Decent service, but there was a slight delay in pickup. Hoping for improvements next time.”",
-    avatar: "/avatar5.png",
+      "“Reliable Gatwick private taxi service. Slight delay but excellent customer service from Peterborough cab company.”",
+    avatar: "/avatar5.webp",
     name: "Amelia Clarke",
   },
   {
     id: 4,
     stars: "/fiveStars.png",
     review:
-      "“uRido has been a lifesaver! Reliable and on time every single time. A+ service!”",
-    avatar: "/avatar9.png",
+      "“uRido's Luton Airport taxi service saved me! 24/7 availability for my East Midlands airport transfer.”",
+    avatar: "/avatar9.webp",
     name: "Oliver Hughes",
   },
   {
     id: 5,
-    stars: "/fourStars.png",
+    stars: "/fiveStars.png",
     review:
-      "“Had a pleasant trip. Driver was courteous and drove safely. Will definitely book again.”",
-    avatar: "/avatar8.png",
+      "“Outstanding Birmingham airport transfers. The driver knew all the shortcuts - saved me 20 minutes!”",
+    avatar: "/avatar8.webp",
     name: "Charlotte Green",
   },
   {
     id: 6,
     stars: "/fiveStars.png",
     review:
-      "“Superb experience, the driver was punctual and the ride was smooth. Highly recommend this service.”",
-    avatar: "/avatar3.png",
+      "“London Luton airport taxi was punctual and comfortable. Best cab service near me!”",
+    avatar: "/avatar3.webp",
     name: "Liam Johnson",
   },
   {
     id: 7,
     stars: "/fiveStars.png",
     review:
-      "“Fantastic! The booking was easy, and the ride was comfortable. Would definitely use again.”",
+      "“Affordable taxi from London to Luton. Clean minicab with professional driver - highly recommend!”",
     avatar: "/profilePic.png",
     name: "Ella Williams",
   },
@@ -59,24 +59,24 @@ export const customerReviews = [
     id: 8,
     stars: "/fourStars.png",
     review:
-      "“Overall a good experience. The vehicle was clean, but the ride could have been a bit smoother.”",
-    avatar: "/avatar2.png",
+      "“Great Luton cabs service. Vehicle was clean though traffic made my airport transfer longer.”",
+    avatar: "/avatar2.webp",
     name: "Lucas Martin",
   },
   {
     id: 9,
     stars: "/fiveStars.png",
     review:
-      "“Excellent service from start to finish. The driver was polite, and I felt safe throughout the journey.”",
-    avatar: "/avatar1.png",
+      "“Perfect Peterborough to Luton Airport taxi. Driver arrived early for my 4am flight!”",
+    avatar: "/avatar1.webp",
     name: "Isla Davis",
   },
   {
     id: 10,
-    stars: "/fourStars.png",
+    stars: "/fiveStars.png",
     review:
-      "“Great experience overall. The only downside was the wait time. Still a very good service.”",
-    avatar: "/avatar4.png",
+      "“Excellent London Luton airport transfer service. Will use this taxi company again and again.”",
+    avatar: "/avatar4.webp",
     name: "Mason Taylor",
   },
 ];

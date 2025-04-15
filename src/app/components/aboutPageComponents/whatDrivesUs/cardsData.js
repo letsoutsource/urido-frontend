@@ -1,29 +1,29 @@
 export const cardsData = [
   {
     id: 1,
-    icon: "/targetIcon.png",
+    icon: "/targetIcon.webp",
     width: 198,
     height: 157,
     heading: "OUR MISSION",
     description:
-      "To provide seamless, safe, & reliable transportation, connecting people effortlessly with efficient taxi services.",
+      "Delivering 24/7 taxi services with premium airport transfers and reliable minicab solutions nationwide.",
   },
   {
     id: 2,
-    icon: "/bulbIcon.png",
+    icon: "/bulbIcon.webp",
     width: 198,
     height: 160,
     heading: "OUR VISION",
     description:
-      "To be the global leader in urban mobility, redefining transportation with innovation, inclusivity, & sustainability at the core.",
+      "Leading in private hire taxi services with affordable rates and professional drivers for all transfers in UK.",
   },
   {
     id: 3,
-    icon: "/medalIcon.png",
+    icon: "/medalIcon.webp",
     width: 160,
     height: 160,
     heading: "OUR VALUES",
     description:
-      "We prioritize safety, customer satisfaction, & sustainability while embracinginnovation to deliver exceptional travel experiences.",
+      "Safety-first minicab journeys with punctual service and comfortable rides for every customer.",
   },
 ];

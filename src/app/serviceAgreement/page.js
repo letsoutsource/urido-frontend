@@ -8,7 +8,7 @@ const ServiceAgreement = () => {
       <div className="section">
         <h2>1. GENERAL</h2>
         <p>
-          1.1. Urido LTD, the company registered at Unit # 2 Northey House,
+          1.1. uRido LTD, the company registered at Unit # 2 Northey House,
           Oxney Road, Peterborough, England, PE15YW (hereinafter referred to as
           the "Company") hereby offers to use the Service available at
           https://gettransfer.com and at all third-level subdomains (hereinafter
@@ -378,7 +378,7 @@ const ServiceAgreement = () => {
             the representations and warranties set out in this clause.
           </li>
           <li>
-            (G) all information provided by the User while using Urido Service,
+            (G) all information provided by the User while using uRido Service,
             including his/her personal data, cookies, etc. may be checked for
             the purposes of sanctions compliance under the EU regulations
             following Russia’s military aggression against Ukraine.
@@ -827,46 +827,9 @@ const ServiceAgreement = () => {
           between the English version and any translation, the English version
           shall prevail.
         </p>
-
-        <h2>24. RESTRICTED REGIONS</h2>
-        <p>
-          24.1. The User agrees that the Carriers with whom the Company has
-          entered into relevant agreements do not carry out Transfers in the
-          regions below and the User will not use the Service to order Transfers
-          in the following regions:
-        </p>
-        <ul>
-          <li>Afghanistan</li>
-          <li>Burma (Myanmar)</li>
-          <li>Burundi</li>
-          <li>Central African Republic</li>
-          <li>Côte d'Ivoire</li>
-          <li>Crimean Peninsula</li>
-          <li>Democratic People's Republic of Korea</li>
-          <li>Democratic Republic of the Congo</li>
-          <li>Haiti</li>
-          <li>Islamic Republic of Iran</li>
-          <li>Kuwait</li>
-          <li>Liberia</li>
-          <li>Libya</li>
-          <li>Mali</li>
-          <li>Nicaragua</li>
-          <li>Donetsk and Luhansk regions of Ukraine</li>
-          <li>Republic of Cuba</li>
-          <li>Republic of Guinea</li>
-          <li>Republic of Guinea-Bissau</li>
-          <li>Republic of Iraq</li>
-          <li>Sierra Leone</li>
-          <li>Somalia</li>
-          <li>South Sudan</li>
-          <li>Syrian Arab Republic</li>
-          <li>The northeastern portion of the island of Cyprus</li>
-          <li>Yemen</li>
-          <li>Zimbabwe</li>
-        </ul>
       </div>
       <div class="company-info">
-        <h2>Urido Cab Service</h2>
+        <h2>uRido Cab Service</h2>
         <table>
           <tr>
             <td>

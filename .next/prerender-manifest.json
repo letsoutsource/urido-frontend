@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/coverageArea": {
+    "/faq": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/coverageArea",
-      "dataRoute": "/coverageArea.rsc",
+      "srcRoute": "/faq",
+      "dataRoute": "/faq.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,30 +49,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/booking": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/booking",
-      "dataRoute": "/booking.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/privacyPolicy": {
       "experimentalBypassFor": [
         {
@@ -88,30 +64,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/privacyPolicy",
       "dataRoute": "/privacyPolicy.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/about": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/about",
-      "dataRoute": "/about.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -145,6 +97,54 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/webhooker": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/webhooker",
+      "dataRoute": "/webhooker.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/about": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about",
+      "dataRoute": "/about.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/help": {
       "experimentalBypassFor": [
         {
@@ -169,7 +169,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/faq": {
+    "/coverageArea": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -182,8 +182,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/faq",
-      "dataRoute": "/faq.rsc",
+      "srcRoute": "/coverageArea",
+      "dataRoute": "/coverageArea.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -197,8 +197,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "b4f1804e30c1adeaa33c8287343afb99",
-    "previewModeSigningKey": "42b2ac6ff85912736e8bc8103204aa6ada2bd6720eec571777fcfbcf9b41b7db",
-    "previewModeEncryptionKey": "0a3c4ccf2a5bbd6b4717c08489805cb7466a258e763e34615d7945505213531e"
+    "previewModeId": "a55356dad2db6f1653d715b981ee6944",
+    "previewModeSigningKey": "5306070bf414998628ccd1f872f76be93f13bff4b7c90e9e002d1b2517818d2c",
+    "previewModeEncryptionKey": "56f00820735110c78e251bcca6556f3de46abe513429b747092da189e8909bd1"
   }
 }

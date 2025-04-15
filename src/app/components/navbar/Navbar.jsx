@@ -19,6 +19,7 @@ const Navbar = () => {
     "/serviceAgreement",
     "/booking",
     "/coverageArea",
+    "/webhooker",
   ].includes(path);
 
   const toggleMenu = () => {
@@ -77,7 +78,12 @@ const Navbar = () => {
         {menuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-header">
-              <Image src="/uridoblack.webp" width={92} height={25} alt="uRido" />
+              <Image
+                src="/uridoblack.webp"
+                width={92}
+                height={25}
+                alt="uRido"
+              />
               <Image
                 src="/cross.png"
                 alt="cross"
@@ -103,7 +109,11 @@ const Navbar = () => {
         )}
 
         <div className="navbar-button-container">
-          <Link href="/booking" className='booknow-button'>
+          <Link
+            href="https://urido.webbooker.icabbi.com/"
+            target="_self"
+            className="booknow-button"
+          >
             Book Now
           </Link>
         </div>

@@ -50,7 +50,7 @@ const Navbar = () => {
               <Image
                 src="/uridowhite.webp"
                 width={135}
-                height={30}
+                height={33}
                 alt="uRido"
                 className="navbar-urido-logo"
               />

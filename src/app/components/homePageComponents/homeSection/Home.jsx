@@ -10,18 +10,17 @@ function HomePage() {
         <Image
           alt="background img"
           src="/homeBackground.webp"
-          width={100}
-          height={100}
+          width={1920}
+          height={1024}
           className="homebackground-image"
+          priority
+          decoding="async"
         />
       </div>
       <div className="homepage-hero-section">
         <div className="homepage-hero-content">
           <h1>Premium Taxi Service</h1>
-          <p>
-            Reliable, Comfortable, and Best Cab Solution anywhere in the
-           UK
-          </p>
+          <p>Reliable, Comfortable, and Best Cab Solution anywhere in the UK</p>
           <div className="homepage-hero-buttons">
             <Link href="/booking" className="btn-primary">
               <FaTaxi /> Book Now

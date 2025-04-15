@@ -1,8 +1,8 @@
-// File: D:\Project\urido-frontend\src\app\booking\page.jsx
-import * as entry from '../../../../src/app/booking/page.js'
+// File: D:\Project\urido-frontend\src\app\webhooker\page.jsx
+import * as entry from '../../../../src/app/webhooker/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../src/app/booking/page.js')
+type TEntry = typeof import('../../../../src/app/webhooker/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

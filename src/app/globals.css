@@ -103,6 +103,12 @@ body {
 .loading-text span:nth-child(9) { animation-delay: 0.8s; }
 .loading-text span:nth-child(10) { animation-delay: 0.9s; }
 
+
+.webbooker-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 @keyframes spin3D {
   0% {
     transform: rotate(0deg);

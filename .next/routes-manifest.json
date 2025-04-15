@@ -45,12 +45,6 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
-      "page": "/booking",
-      "regex": "^/booking(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/booking(?:/)?$"
-    },
-    {
       "page": "/coverageArea",
       "regex": "^/coverageArea(?:/)?$",
       "routeKeys": {},
@@ -85,6 +79,12 @@
       "regex": "^/serviceAgreement(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/serviceAgreement(?:/)?$"
+    },
+    {
+      "page": "/webhooker",
+      "regex": "^/webhooker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/webhooker(?:/)?$"
     }
   ],
   "dataRoutes": [],

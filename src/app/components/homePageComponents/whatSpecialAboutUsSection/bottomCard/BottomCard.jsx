@@ -7,18 +7,17 @@ const BottomCard = () => {
   return (
     <div className="specialaboutus-bottomcard">
       <div className="bottomcard-left">
-        <h4 className="specialaboutus-bottomcard-head">Nation Wide</h4>
+        <h4 className="specialaboutus-bottomcard-head">Nationwide</h4>
         <p className="specialaboutus-bottomcard-para">
-          Your trusted ride, no matter where you are.
-            Experience seamless, reliable, and stress-free journeys across the
-            country with just a tap.
-           </p>
+          Your 24/7 minicab solution for stress-free airport transfers and
+          comfortable private hire journeys across UK.
+        </p>
         <div className="bottomcard-icons">
-        <BottomCardIcons />
+          <BottomCardIcons />
         </div>
       </div>
       <div className="bottomcard-right">
-        <Image src="/car.png" alt="car" width={470} height={270}/>
+        <Image src="/car.webp" alt="car" width={470} height={270} />
       </div>
     </div>
   );

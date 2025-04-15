@@ -9,7 +9,7 @@ function HomePage() {
       <div className="background-container">
         <Image
           alt="background img"
-          src="/homeBackground.jpg"
+          src="/homeBackground.webp"
           width={100}
           height={100}
           className="homebackground-image"
@@ -19,8 +19,8 @@ function HomePage() {
         <div className="homepage-hero-content">
           <h1>Premium Taxi Service</h1>
           <p>
-            Reliable, comfortable, and prompt transportation anywhere in the
-            city
+            Reliable, Comfortable, and Best Cab Solution anywhere in the
+           UK
           </p>
           <div className="homepage-hero-buttons">
             <Link href="/booking" className="btn-primary">

@@ -14,24 +14,22 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-description">
           <div className="footer-description-top">
-            <Image src="/uridowhite.png" width={135} height={35} alt="uRido"/>
+            <Image src="/uridowhite.webp" width={135} height={35} alt="uRido" />
             <p className="footer-description-paragraph">
-              Offering reliable and convenient taxi services tailored for your
-              travel needs. Whether it’s a quick ride across town or a
-              long-distance journey, uRido ensures safety, comfort, and timely
-              pickups to make every trip stressfree & enjoyable.
+              Offering reliable and affordable cab services tailored for your
+              travel needs. Whether it’s a quick ride across town or a airport
+              transfers, uRido ensures safety, comfort, and timely service
+              accross the UK.
             </p>
           </div>
           <div className="footer-description-bottom">
             <h3 className="footer-followUs-heading">Follow Us</h3>
             <div className="footer-social-icons">
               <FacebookLogo />
-              {/* <InstagramLogo /> */}
               <LinkedinIcon />
             </div>
           </div>
         </div>
-     
 
         <div className="footer-links">
           <h5 className="footer-links-heading">Links</h5>

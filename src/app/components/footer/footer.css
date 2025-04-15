@@ -99,18 +99,12 @@
 }
 
 @media (max-width: 768px) {
-  .footer-container{
+  .footer-container {
     flex-direction: column;
     padding: 40px 20px;
     gap: 10px;
   }
-  .footer-location{
+  .footer-location {
     display: none;
-  }
-  .footer-links{
-    /* display: none; */
-  }
-  .footer-description-top{
-    
   }
 }

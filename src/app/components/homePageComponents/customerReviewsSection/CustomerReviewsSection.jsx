@@ -19,7 +19,7 @@ const CustomerReviewsSection = () => {
       <h1 className="customer-reviews-head">Our Customer Reviews</h1>
       <h1 className="customer-reviews-para">
         Urido is trusted by the fastest-growing companies in the taxi service
-        industry, focusing on providing seamless and reliable transportation
+        industry, focusing on providing affordable and reliable cab
         solutions. Here’s what they have to say about us.
       </h1>
       <CustomerReviews scroll={scroll} cardsContainerRef={cardsContainerRef} />

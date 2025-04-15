@@ -5,14 +5,14 @@ const PrivacyPolicy = () => {
   return (
     <div className="privacy-container">
       <div className="privacy-content">
-        <h1>PRIVACY POLICY OF URIDO SERVICE</h1>
+        <h1>PRIVACY POLICY OF uRido SERVICE</h1>
 
         <section>
           <h2>1. GENERAL PROVISIONS</h2>
           <div className="policy-section">
             <p>
               1.1. This Privacy Policy (hereinafter referred to as the "Policy")
-              describes the procedure implemented by URIDO LTD, company
+              describes the procedure implemented by uRido LTD, company
               registered at the address: 57 Spyrou Kyprianou, Bybloserve
               Business Center, 2nd floor, 6051, Larnaca, Cyprus, and its
               affiliates and authorized representatives (hereinafter referred to
@@ -179,14 +179,14 @@ const PrivacyPolicy = () => {
 
             <p>
               7.2. For the Users residing in the European Economic Area and
-              Switzerland URIDO LTD is the controller for any User information
+              Switzerland uRido LTD is the controller for any User information
               under this Privacy Policy as in the terms of European Union
               General Data Protection Regulation 2016/679.
             </p>
 
             <p>
               7.3. Personal data of Users residing in UK is processed under the
-              Data Protection Act 2018, and URIDO LTD is the controller for such
+              Data Protection Act 2018, and uRido LTD is the controller for such
               information.
             </p>
 

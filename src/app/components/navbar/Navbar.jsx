@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link href="/">
             {blackThemeLinks ? (
               <Image
-                src="/uridoblack.png"
+                src="/uridoblack.webp"
                 width={135}
                 height={30}
                 alt="uRido"
@@ -48,7 +48,7 @@ const Navbar = () => {
               />
             ) : (
               <Image
-                src="/uridowhite.png"
+                src="/uridowhite.webp"
                 width={135}
                 height={30}
                 alt="uRido"
@@ -77,7 +77,7 @@ const Navbar = () => {
         {menuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-header">
-              <Image src="/uridoblack.png" width={92} height={25} alt="uRido" />
+              <Image src="/uridoblack.webp" width={92} height={25} alt="uRido" />
               <Image
                 src="/cross.png"
                 alt="cross"

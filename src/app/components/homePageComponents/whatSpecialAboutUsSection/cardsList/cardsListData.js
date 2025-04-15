@@ -4,12 +4,12 @@ export const specialAboutUsCards = [
     heading: "Fixed Price",
     description: "The fixed fare is set in every taximeter as the main tariff.",
     Icon: {
-      src: "/walletIcon.png",
+      src: "/walletIcon.webp",
       width: 220,
       height: 220,
     },
     MobileIcon: {
-      src: "/walletIcon.png",
+      src: "/walletIcon.webp",
       width: 95,
       height: 90,
     },
@@ -19,12 +19,12 @@ export const specialAboutUsCards = [
     heading: "No Fee",
     description: "We guarantee fixed price and you should not pay tips.",
     Icon: {
-      src: "/dollarIcon.png",
+      src: "/dollarIcon.webp",
       width: 220,
       height: 220,
     },
     MobileIcon: {
-      src: "/dollarIcon.png",
+      src: "/dollarIcon.webp",
       width: 95,
       height: 90,
     },
@@ -34,12 +34,12 @@ export const specialAboutUsCards = [
     heading: "100% Pleasure",
     description: "We have a lot of standing customer and high ratings.",
     Icon: {
-      src: "/percentIcon.png",
+      src: "/percentIcon.webp",
       width: 220, 
       height: 220, 
       },
     MobileIcon: {
-      src: "/percentIcon.png", 
+      src: "/percentIcon.webp", 
       width: 90, 
       height: 90, 
       },

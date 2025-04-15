@@ -11,7 +11,7 @@ const VehiclesList = async () => {
             src={vehicle.vehicleImage}
             width={265}
             height={160}
-            alt={vehicle.vehicleName}
+            alt="lutton peterboroguh london cheap taxi and airport transfers"
             className="vehicleListSection-vehicle-image"
           />
           <h4 className="vehicleListSection-vehicle-name">

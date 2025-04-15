@@ -1,7 +1,7 @@
 export const vehicles = [
   {
     id: 1,
-    vehicleName: "Saloon Car",
+    vehicleName: "Estate",
     vehicleImage: "/saloon.webp",
     passenger: 4,
     luggage: 2,
@@ -16,7 +16,7 @@ export const vehicles = [
   },
   {
     id: 4,
-    vehicleName: "Estate Car",
+    vehicleName: "Saloon Car",
 
     vehicleImage: "/estate.webp",
     passenger: 4,

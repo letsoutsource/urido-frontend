@@ -22,7 +22,11 @@ function HomePage() {
           <h1>Premium Taxi Service</h1>
           <p>Reliable, Comfortable, and Best Cab Solution anywhere in the UK</p>
           <div className="homepage-hero-buttons">
-            <Link href="/booking" className="btn-primary">
+            <Link
+              href="https://urido.webbooker.icabbi.com/"
+              target="_self"
+              className="btn-primary"
+            >
               <FaTaxi /> Book Now
             </Link>
             <Link href="/help" className="btn-secondary">

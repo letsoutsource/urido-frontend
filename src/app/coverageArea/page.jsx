@@ -41,7 +41,11 @@ const CoverageAreaPage = () => {
               journey with uRido for smooth travel experience.
             </p>
             <div className="coverage-area-button-container">
-              <Link className="primary-link" href="/booking">
+              <Link
+                className="primary-link"
+                href="https://urido.webbooker.icabbi.com/"
+                target="_self"
+              >
                 <FaPhone size={16} /> Book Now
               </Link>
               <Link className="secondary-link" href="/about">
@@ -100,10 +104,10 @@ const CoverageAreaPage = () => {
               </h2>
             </div>
             <p className="coverage-area-section-description">
-              Beyond airports transafers, uRido offers excellent taxi services, executive
-              car services, and cheap taxi options for your everyday travel.
-              Count on us for all your urban and inter-city transportation
-              needs.
+              Beyond airports transafers, uRido offers excellent taxi services,
+              executive car services, and cheap taxi options for your everyday
+              travel. Count on us for all your urban and inter-city
+              transportation needs.
             </p>
 
             <div className="coverage-area-regions-container">

@@ -8,9 +8,17 @@ const HoldUpSection = () => {
         Hold up! Here is the most important part
       </h1>
       <p className="holdUpSection-para">
-        Thank you for visiting our website! We’d be delighted to see your name on our taxi booking list for a premium ride or airport transfer. It’s worth the wait.
+        Thank you for visiting our website! We’d be delighted to see your name
+        on our taxi booking list for a premium ride or airport transfer. It’s
+        worth the wait.
       </p>
-      <Link href="/booking" className="holdUpSection-button">Book Cab</Link>
+      <Link
+        href="https://urido.webbooker.icabbi.com/"
+        target="_self"
+        className="holdUpSection-button"
+      >
+        Book Cab
+      </Link>
     </div>
   );
 };

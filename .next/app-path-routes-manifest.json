@@ -4,9 +4,9 @@
   "/coverageArea/page": "/coverageArea",
   "/faq/page": "/faq",
   "/page": "/",
-  "/webhooker/page": "/webhooker",
   "/privacyPolicy/page": "/privacyPolicy",
   "/serviceAgreement/page": "/serviceAgreement",
-  "/help/page": "/help",
-  "/about/page": "/about"
+  "/webhooker/page": "/webhooker",
+  "/about/page": "/about",
+  "/help/page": "/help"
 }

@@ -31,7 +31,7 @@ export const specialAboutUsCards = [
   },
   {
     id: 3,
-    heading: "100% Pleasure",
+    heading: "100% Comfort",
     description: "We have a lot of standing customer and high ratings.",
     Icon: {
       src: "/percentIcon.webp",

@@ -49,6 +49,38 @@
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+.phone-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  margin: 0 auto 1.5rem;
+  max-width: 300px;
+  border: 2px solid #f8a31a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.phone-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.phone-banner-icon {
+  color: #f8a31a;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.phone-banner-number {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
 
 .btn-primary,
 .btn-secondary {
@@ -99,6 +131,13 @@
   .homepage-hero-content p {
     font-size: 17px;
   }
+  .phone-banner {
+    max-width: 220px;
+    padding: 0.5rem 1rem;
+  }
+  .phone-banner-number {
+    font-size: 1.1rem;
+  }
   .homepage-hero-buttons {
     gap: 17px;
   }
@@ -121,6 +160,13 @@
     gap: 12px;
   }
   .homepage-hero-content p {
-    font-size: 14px;
+    font-size: 15px;
+  }
+  .phone-banner {
+    max-width: 200px;
+    padding: 0.4rem 0.8rem;
+  }
+  .phone-banner-number {
+    font-size: 1rem;
   }
 }

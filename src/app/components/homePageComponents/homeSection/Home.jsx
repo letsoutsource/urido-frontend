@@ -19,8 +19,14 @@ function HomePage() {
       </div>
       <div className="homepage-hero-section">
         <div className="homepage-hero-content">
-          <h1>Premium Taxi Service</h1>
+          <h1>Luxury Cab Solutions</h1>
           <p>Reliable, Comfortable, and Best Cab Solution anywhere in the UK</p>
+          <div className="phone-banner">
+            <FaPhoneAlt className="phone-banner-icon" />
+            <a href="tel:01733201000" className="phone-banner-number">
+              01733 201000
+            </a>
+          </div>
           <div className="homepage-hero-buttons">
             <Link
               href="https://urido.webbooker.icabbi.com/"

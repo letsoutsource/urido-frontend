@@ -105,8 +105,8 @@ const HelplineForm = () => {
           {...register("message", {
             required: "Message is required",
             validate: (value) =>
-              value.split(" ").filter(Boolean).length >= 10 ||
-              "Message must be at least 10 words",
+              value.split(" ").filter(Boolean).length >= 5 ||
+              "Message must be at least 05 words",
           })}
           placeholder="Write your Message"
           className="form-input"

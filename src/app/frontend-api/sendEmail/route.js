@@ -20,7 +20,7 @@ export async function POST(req) {
 
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: auto; border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-      <h2 style="color: #007BFF; text-align: center;">New Contact Form Submission</h2>
+      <h2 style="color: #ff9d00; text-align: center;">New Contact Form Submission</h2>
       <hr style="border: 1px solid #eee;">
       <p><strong>Name:</strong> ${Name}</p>
       <p><strong>Email:</strong> ${email}</p>

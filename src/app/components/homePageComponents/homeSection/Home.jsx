@@ -19,7 +19,7 @@ function HomePage() {
       </div>
       <div className="homepage-hero-section">
         <div className="homepage-hero-content">
-          <h1>Luxury Cab Solutions</h1>
+          <h1>Your Ride, sorted!</h1>
           <p>Reliable, Comfortable, and Best Cab Solution anywhere in the UK</p>
           <div className="phone-banner">
             <FaPhoneAlt className="phone-banner-icon" />

@@ -109,7 +109,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "D:\\Project\\urido-frontend",
+    "outputFileTracingRoot": "D:\\Projects\\urido-frontend",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -166,7 +166,7 @@
       "middlewarePrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 3,
+      "cpus": 11,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -187,7 +187,7 @@
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
       "turbo": {
-        "root": "D:\\Project\\urido-frontend"
+        "root": "D:\\Projects\\urido-frontend"
       },
       "typedRoutes": false,
       "typedEnv": false,
@@ -293,7 +293,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs"
   },
-  "appDir": "D:\\Project\\urido-frontend",
+  "appDir": "D:\\Projects\\urido-frontend",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

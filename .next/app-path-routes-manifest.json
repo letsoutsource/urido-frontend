@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "/_not-found",
   "/frontend-api/sendEmail/route": "/frontend-api/sendEmail",
-  "/page": "/",
-  "/coverageArea/page": "/coverageArea",
   "/faq/page": "/faq",
+  "/coverageArea/page": "/coverageArea",
+  "/page": "/",
   "/privacyPolicy/page": "/privacyPolicy",
-  "/webhooker/page": "/webhooker",
-  "/about/page": "/about",
   "/help/page": "/help",
-  "/serviceAgreement/page": "/serviceAgreement"
+  "/webhooker/page": "/webhooker",
+  "/serviceAgreement/page": "/serviceAgreement",
+  "/about/page": "/about"
 }

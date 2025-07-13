@@ -22,11 +22,7 @@ const HelplineForm = () => {
         },
       });
       console.log("🚀 ~ onSubmit ~ response:", response)
-      // if (response.status === 200) {
         toast.success("Email sent successfully");
-      // } else {
-        // toast.error("Failed to send email");
-      // }
     } catch (error) {
       console.error("Error sending email:", error);
       toast.error("Failed to send email");

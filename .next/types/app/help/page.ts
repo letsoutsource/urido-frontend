@@ -1,4 +1,4 @@
-// File: D:\Project\urido-frontend\src\app\help\page.js
+// File: D:\Projects\urido-frontend\src\app\help\page.js
 import * as entry from '../../../../src/app/help/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

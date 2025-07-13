@@ -85,15 +85,8 @@ web_modules/
 
 # Ignore everything inside .next
 .next/
-
-# But track everything inside .next except the cache folder
-!.next
-!.next/static
-!.next/standalone
-!.next/server
-
-# Explicitly ignore the cache folder inside .next
 .next/cache/
+
 
 # Nuxt.js build / generate output
 .nuxt

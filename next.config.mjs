@@ -1,21 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  compress: true, // Enable Gzip compression
+  compress: true, 
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com", // Allow images from Cloudinary
-      },
+        hostname: "res.cloudinary.com",
+        },
       {
         protocol: "http",
-        hostname: "localhost", // Allow images from localhost
-      },
+        hostname: "localhost", 
+        },
       {
         protocol: "https",
-        hostname: "urido.co.uk", // Add your domain here
-      },
+        hostname: "urido.co.uk",
+        },
     ],
     unoptimized: true,
   },

@@ -1,8 +1,15 @@
-import React from "react";
-import HelplineFormSection from "../components/helplinePageComponents/helplineFormSection/HelplineFormSection";
-import HelplineMap from "../components/helplinePageComponents/helplineMap/HelplineMap";
+'use client'
+import dynamic from 'next/dynamic'
 
-export const metadata = {
+const HelplineFormSection = dynamic(
+  () => import('../components/helplinePageComponents/helplineFormSection/HelplineFormSection'),
+  { ssr: false, loading: () => <p>Loading form...</p> }
+)
+const HelplineMap = dynamic(
+  () => import('../components/helplinePageComponents/helplineMap/HelplineMap'),
+  { ssr: false, loading: () => <p>Loading map...</p> }
+)
+const metadata = {
   title: "24/7 Taxi Support | Peterborough & Luton Airport Cab Helpline",
   description:
     "Need help with taxi bookings? Contact our 24/7 helpline for Peterborough cabs, Luton Airport transfers, and nationwide minicab services. Fast response!",

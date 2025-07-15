@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./vehiclesList.css";
 import { vehicles } from "./vehicleData";
 
-const VehiclesList = async () => {
+const VehiclesList = () => {
   return (
     <div className="vehicleListSection-vehicles">
       {vehicles?.map((vehicle, index) => (

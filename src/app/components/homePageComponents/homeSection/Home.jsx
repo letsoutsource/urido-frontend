@@ -14,7 +14,7 @@ const HomePage = React.memo(() => {
         '/logo.png'
       ];
       images.forEach(imgSrc => {
-        const img = new Image();
+        const img = new window.Image();
         img.src = imgSrc;
       });
     };

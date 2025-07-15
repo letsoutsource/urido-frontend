@@ -1,27 +1,9 @@
-'use client'
-import dynamic from 'next/dynamic'
+import CustomerReviewsSection from './components/homePageComponents/customerReviewsSection/CustomerReviewsSection'
+import HoldUpSection from './components/homePageComponents/holdUpSection/HoldUpSection'
 import HomePage from './components/homePageComponents/homeSection/Home'
-const WhatSpecialAboutUs = dynamic(
-  () => import('./components/homePageComponents/whatSpecialAboutUsSection/WhatSpecialAboutUs'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-)
-const CustomerReviewsSection = dynamic(
-  () => import('./components/homePageComponents/customerReviewsSection/CustomerReviewsSection'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-)
-const HowDoesItWork = dynamic(
-  () => import('./components/homePageComponents/howDoesItWorkSection/HowDoesItWork'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-)
-const VehicleListSection = dynamic(
-  () => import('./components/homePageComponents/vehiclesListSection/VehicleListSection'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-)
-const HoldUpSection = dynamic(
-  () => import('./components/homePageComponents/holdUpSection/HoldUpSection'),
-  { ssr: false, loading: () => <p>Loading...</p> }
-)
-
+import HowDoesItWork from './components/homePageComponents/howDoesItWorkSection/HowDoesItWork'
+import VehicleListSection from './components/homePageComponents/vehiclesListSection/VehicleListSection'
+import WhatSpecialAboutUs from './components/homePageComponents/whatSpecialAboutUsSection/WhatSpecialAboutUs'
 export default function Home() {
   return (
     <>

@@ -27,40 +27,5 @@
       "static/css/98f9cdeaee57c375.css",
       "static/chunks/811.3c486cce3f225014.js"
     ]
-  },
-  "app\\page.js -> ./components/homePageComponents/customerReviewsSection/CustomerReviewsSection": {
-    "id": 4975,
-    "files": [
-      "static/css/40348ca1579c35e2.css",
-      "static/chunks/975.217e9e65b094dd17.js"
-    ]
-  },
-  "app\\page.js -> ./components/homePageComponents/holdUpSection/HoldUpSection": {
-    "id": 705,
-    "files": [
-      "static/css/0685adad98d6e4f2.css",
-      "static/chunks/705.cc20c40c4e782751.js"
-    ]
-  },
-  "app\\page.js -> ./components/homePageComponents/howDoesItWorkSection/HowDoesItWork": {
-    "id": 976,
-    "files": [
-      "static/css/3b284ea4027dcaa2.css",
-      "static/chunks/976.be831fadf9de3800.js"
-    ]
-  },
-  "app\\page.js -> ./components/homePageComponents/vehiclesListSection/VehicleListSection": {
-    "id": 2852,
-    "files": [
-      "static/css/a42d903bc6b1b719.css",
-      "static/chunks/852.54ee193077d01333.js"
-    ]
-  },
-  "app\\page.js -> ./components/homePageComponents/whatSpecialAboutUsSection/WhatSpecialAboutUs": {
-    "id": 3545,
-    "files": [
-      "static/css/ddfb8c29204863e7.css",
-      "static/chunks/545.52c1ef658be1ede9.js"
-    ]
   }
 }

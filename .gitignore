@@ -85,6 +85,7 @@ web_modules/
 
 # Ignore everything inside .next
 .next/
+.next/cache/
 
 
 # Nuxt.js build / generate output

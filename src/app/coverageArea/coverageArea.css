@@ -25,6 +25,7 @@
   top: 0;
   right: 0;
   opacity: 0.1;
+  pointer-events: none;
 }
 
 .coverage-area-hero-heading {
@@ -241,43 +242,46 @@
   .coverage-area-main-container {
     padding: 32px 20px;
   }
-  
+  .coverage-area-section-title-container {
+    align-items: normal;
+  }
+
   .coverage-area-hero-section {
     padding: 24px;
   }
-  
+
   .coverage-area-hero-heading {
     font-size: 28px;
   }
-  
+
   .coverage-area-hero-subheading {
     font-size: 18px;
   }
-  
+
   .coverage-area-button-container {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .primary-link,
   .secondary-link {
     width: 100%;
     justify-content: center;
     padding: 10px 24px;
   }
-  
+
   .coverage-area-grid-container {
     grid-template-columns: 1fr;
   }
-  
+
   .coverage-area-section-title {
     font-size: 24px;
   }
-  
+
   .coverage-area-section-description {
     font-size: 16px;
   }
-  
+
   .coverage-area-regions-wrapper {
     justify-content: start;
     gap: 16px;
@@ -292,32 +296,35 @@
     font-size: 24px;
     margin-bottom: 12px;
   }
-  
+
   .coverage-area-hero-subheading {
     font-size: 16px;
   }
-  
+
   .coverage-area-section-title {
     font-size: 20px;
   }
-  
+  .coverage-area-section-title-container {
+    align-items: normal;
+  }
+
   .coverage-area-section-description {
     font-size: 14px;
     margin-bottom: 24px;
   }
-  
+
   .airport-card {
     padding: 16px;
   }
-  
+
   .airport-name {
     font-size: 16px;
   }
-  
+
   .airport-location {
     font-size: 14px;
   }
-  
+
   .coverage-area-region-tag {
     padding: 6px 12px;
     font-size: 14px;
@@ -326,12 +333,12 @@
     justify-content: start;
     gap: 18px;
   }
-  
+
   .service-time,
   .book-link {
     font-size: 13px;
   }
-  
+
   .popular-badge {
     font-size: 11px;
   }

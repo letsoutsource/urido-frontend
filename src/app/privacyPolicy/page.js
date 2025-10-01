@@ -13,14 +13,13 @@ const PrivacyPolicy = () => {
             <p>
               1.1. This Privacy Policy (hereinafter referred to as the "Policy")
               describes the procedure implemented by uRido LTD, company
-              registered at the address: 57 Spyrou Kyprianou, Bybloserve
-              Business Center, 2nd floor, 6051, Larnaca, Cyprus, and its
-              affiliates and authorized representatives (hereinafter referred to
-              as the "Company") to collect and use the personal data in relation
-              to use the service for search of a provider of private passenger
-              automobile and any other transportation services (the "Carriers"),
-              available at https://urido.com (hereinafter referred to as the
-              "Service").
+              registered at the address: Unit # 2 Northey House, Oxney Road,
+              Peterborough, England, PE15YW, and its affiliates and authorized
+              representatives (hereinafter referred to as the "Company") to
+              collect and use the personal data in relation to use the service
+              for search of a provider of private passenger automobile and any
+              other transportation services (the "Carriers"), available at
+              https://urido.com (hereinafter referred to as the "Service").
             </p>
 
             <p>
@@ -145,7 +144,7 @@ const PrivacyPolicy = () => {
             <p>
               5.2. Requests for access to information, changes, account
               deletion, or opting out of marketing communications can be sent to
-              info@gettransfer.com.
+              support@urido.co.uk
             </p>
           </div>
         </section>

@@ -1,12 +1,12 @@
 {
-  "/frontend-api/sendEmail/route": "app/frontend-api/sendEmail/route.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/frontend-api/sendEmail/route": "app/frontend-api/sendEmail/route.js",
   "/coverageArea/page": "app/coverageArea/page.js",
+  "/help/page": "app/help/page.js",
   "/faq/page": "app/faq/page.js",
   "/page": "app/page.js",
-  "/help/page": "app/help/page.js",
   "/privacyPolicy/page": "app/privacyPolicy/page.js",
-  "/webhooker/page": "app/webhooker/page.js",
   "/serviceAgreement/page": "app/serviceAgreement/page.js",
+  "/webhooker/page": "app/webhooker/page.js",
   "/about/page": "app/about/page.js"
 }

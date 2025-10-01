@@ -11,7 +11,7 @@ const ServiceAgreement = () => {
           1.1. uRido LTD, the company registered at Unit # 2 Northey House,
           Oxney Road, Peterborough, England, PE15YW (hereinafter referred to as
           the "Company") hereby offers to use the Service available at
-          https://gettransfer.com and at all third-level subdomains (hereinafter
+          https://urido.co.uk/ and at all third-level subdomains (hereinafter
           referred to as the "Site") and further described in section 2 hereof
           (hereinafter referred to as the "Service") to an Internet user
           (hereinafter referred to as the "User") under the terms and conditions
@@ -52,7 +52,7 @@ const ServiceAgreement = () => {
         <p>
           2.1. The Service grants the User access to the data for searching for
           private and other transportation service providers duly registered at
-          the Service under the GetTransfer Service License Contract
+          the Service under the uRido Service License Contract
           (hereinafter referred to as the "Carriers").
         </p>
         <p>
@@ -214,9 +214,7 @@ const ServiceAgreement = () => {
             Djibouti, Egypt, Israel, Jordan, Mauritania, Morocco, Oman,
             Palestine, Qatar, Saudi Arabia, Tunisia, Turkey, United Arab
             Emirates occasionally can be made by the following payment processor
-            under the terms and conditions expressed by the payment system
-            Adyen: GETTRANSFER MENA INFORMATION TECHNOLOGY EST. (registered in
-            Dubai, UAE, registration number 055-7489990) shall be the Service
+            under the terms and conditions shall be the Service
             operator in the abovementioned regions. In these regions the
             operator shall perform all the Company’s obligations and exercise
             its rights towards the Users, including but not limited to making
@@ -233,7 +231,7 @@ const ServiceAgreement = () => {
           The User may unilaterally cancel a Transfer booked from a Personal
           Account with Flexible access and fully paid from their Personal
           Account, by sending an e-mail to the Service support email
-          info@gettransfer.com or a message to the Service support chat. Such
+          support@urido.co.uk or a message to the Service support chat. Such
           Transfer may be canceled in respect of one direction, if the Transfer
           between the User and the Carrier was agreed as a round trip route
           ("there and back"), with the observance of the rules and deadlines for

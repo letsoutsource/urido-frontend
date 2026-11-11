@@ -22,7 +22,11 @@ export const inputs = [
     placeholder: "Name",
     icon: "/user.png",
     validation: {
-      required: "Name?",
+      required: "Name is required",
+      minLength: {
+        value: 2,
+        message: "Name must be at least 2 characters",
+      },
     }
   },
   {
@@ -30,7 +34,7 @@ export const inputs = [
     placeholder: "Email",
     icon: "/mail.png",
     validation: {
-      required: "Email?",
+      required: "Email is required",
       pattern: {
         value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         message: "Please enter a valid email address",
@@ -39,10 +43,10 @@ export const inputs = [
   },
 ];
 export const subjects = [
-  { value: "complaintaboutdriver", label: "Complaint About Driver" },
-  { value: "lostitem", label: "Lost Item" },
-  { value: "technicalsupport", label: "Technical Support" },
-  { value: "paymentissue", label: "Payment Issue" },
-  { value: "bookingproblem", label: "Booking Problem" },
-  { value: "other", label: "Other" },
+  { value: "Complaint About Driver", label: "Complaint About Driver" },
+  { value: "Lost Item", label: "Lost Item" },
+  { value: "Technical Support", label: "Technical Support" },
+  { value: "Payment Issue", label: "Payment Issue" },
+  { value: "Booking Problem", label: "Booking Problem" },
+  { value: "Other", label: "Other" },
 ];

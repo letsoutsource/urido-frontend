@@ -1,6 +1,6 @@
 "use client";
 import { FaWhatsapp } from "react-icons/fa";
-import "./whatsAppButton.css";
+import "./whatsappButton.css";
 
 const WhatsAppButton = () => {
   const handleClick = () => {
